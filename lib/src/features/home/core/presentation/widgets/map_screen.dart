@@ -71,6 +71,10 @@ class _MapScreenState extends ConsumerState<MapScreen> {
     }
   }
 
+  String euroToCFA(double price) {
+    return '${(price * 655).toStringAsFixed(2)} FCFA';
+  }
+
   void _showStationDetails(Station station) {
     showModalBottomSheet(
       context: context,
@@ -96,7 +100,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
             const SizedBox(height: 8),
             const Text('Prices:'),
             ...station.prices.entries.map(
-              (entry) => Text('${entry.key}: ${entry.value.toStringAsFixed(2)}€'),
+              (entry) => Text('${entry.key}: ${euroToCFA(entry.value)} CFA'),
             ),
             if (station.hasCompressedAir) ...[
               const SizedBox(height: 8),

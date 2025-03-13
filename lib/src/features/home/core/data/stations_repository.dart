@@ -24,6 +24,7 @@ class StationsRepository {
       ).timeout(const Duration(seconds: 5));
       
       if (response.statusCode == 200) {
+        print('Loaded remote data');
         return _parseStationsFromJson(response.body);
       } else {
         print('Failed to load remote data: ${response.statusCode}');
