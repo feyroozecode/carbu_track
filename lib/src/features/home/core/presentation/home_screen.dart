@@ -5,7 +5,6 @@ import '../../../../common/constants/app_colors.dart';
 import 'widgets/map_screen.dart';
 import '../../settings/settings_screen.dart';
 
-
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
@@ -34,7 +33,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     //BottomNavigationBarItem(label: "Accueil", icon: Icon(Icons.home)),
     BottomNavigationBarItem(label: "Carte", icon: Icon(Icons.map)),
     //BottomNavigationBarItem(label: "Profil", icon: Icon(Icons.person)),
-    BottomNavigationBarItem(label: "Plus", icon: Icon(Icons.more_horiz)),
+    BottomNavigationBarItem(label: "Plus", icon: Icon(Icons.settings)),
   ];
 
   @override

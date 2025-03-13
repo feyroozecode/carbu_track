@@ -72,7 +72,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
   }
 
   String euroToCFA(double price) {
-    return '${(price * 655).toStringAsFixed(2)} FCFA';
+    return '${(price * 660).toStringAsFixed(2)} FCFA';
   }
 
   void _showStationDetails(Station station) {
@@ -158,7 +158,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
   }
 
   // Add this at the class level
-  bool _isSatelliteView = false;
+  bool _isSatelliteView = true;
 
   @override
   Widget build(BuildContext context) {
@@ -198,8 +198,9 @@ class _MapScreenState extends ConsumerState<MapScreen> {
             children: [
               TileLayer(
                 urlTemplate: _isSatelliteView 
-                    ? 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
-                    : 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                    ? 'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
+                    :   'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+
                 userAgentPackageName: 'com.carbutrack.app',
               ),
               MarkerClusterLayerWidget(
