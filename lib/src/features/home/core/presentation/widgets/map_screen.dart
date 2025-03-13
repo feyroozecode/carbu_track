@@ -22,7 +22,7 @@ class MapScreen extends ConsumerStatefulWidget {
 class _MapScreenState extends ConsumerState<MapScreen> {
   final MapController _mapController = MapController();
   final List<String> _fuelTypes = [
-    'All',
+    'Tout',
     'Diesel',
     'SP95',
     'SP98',
@@ -98,7 +98,7 @@ class _MapScreenState extends ConsumerState<MapScreen> {
             const SizedBox(height: 8),
             Text('Disponibilite d\'essence: ${station.fuelTypes.join(', ')}'),
             const SizedBox(height: 8),
-            const Text('Prices:'),
+            const Text('Prix:'),
             ...station.prices.entries.map(
               (entry) => Text('${entry.key}: ${euroToCFA(entry.value)} CFA'),
             ),
@@ -115,8 +115,9 @@ class _MapScreenState extends ConsumerState<MapScreen> {
                     // Navigate to directions
                     Navigator.pop(context);
                     final url = 'https://www.google.com/maps/dir/?api=1&destination=${station.latitude},${station.longitude}';
-                    if (await canLaunchUrl(Uri.parse(url))) {
-                      await canLaunchUrl(Uri.parse(url));
+                    String googleUrl = 'https://www.google.com/maps/search/?api=1&query=${station.latitude},${station.longitude}';
+                    if (await canLaunchUrl(Uri.parse(googleUrl))) {
+                      await canLaunchUrl(Uri.parse(googleUrl));
                     } else {
                       debugPrint('Could not launch $url');
                     }
@@ -156,6 +157,9 @@ class _MapScreenState extends ConsumerState<MapScreen> {
     );
   }
 
+  // Add this at the class level
+  bool _isSatelliteView = false;
+
   @override
   Widget build(BuildContext context) {
     final userLocation = ref.watch(userLocationProvider);
@@ -186,8 +190,6 @@ class _MapScreenState extends ConsumerState<MapScreen> {
           FlutterMap(
             mapController: _mapController,
             options: MapOptions(
-              // center: userLocation,
-              // zoom: 13.0,
               initialZoom: 13.0,
               maxZoom: 18.0,
               minZoom: 6.0,
@@ -195,7 +197,9 @@ class _MapScreenState extends ConsumerState<MapScreen> {
             ),
             children: [
               TileLayer(
-                urlTemplate: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+                urlTemplate: _isSatelliteView 
+                    ? 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+                    : 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
                 userAgentPackageName: 'com.carbutrack.app',
               ),
               MarkerClusterLayerWidget(
@@ -221,6 +225,79 @@ class _MapScreenState extends ConsumerState<MapScreen> {
               ),
             ],
           ),
+          
+          // Zoom controls
+          Positioned(
+            right: 16,
+            bottom: 150,
+            child: Column(
+              children: [
+                Card(
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Column(
+                      children: [
+                        IconButton(
+                          icon: const Icon(Icons.add),
+                          onPressed: () {
+                            final currentZoom = _mapController.camera.zoom;
+                            _mapController.move(
+                              _mapController.camera.center, 
+                              currentZoom + 1.0
+                            );
+                          },
+                          tooltip: 'Zoom in',
+                        ),
+                        const Divider(height: 1),
+                        IconButton(
+                          icon: const Icon(Icons.remove),
+                          onPressed: () {
+                            final currentZoom = _mapController.camera.zoom;
+                            _mapController.move(
+                              _mapController.camera.center, 
+                              currentZoom - 1.0
+                            );
+                          },
+                          tooltip: 'Zoom out',
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                // Map type toggle button
+                Card(
+                  elevation: 4,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: IconButton(
+                      icon: Icon(_isSatelliteView ? Icons.map : Icons.satellite),
+                      onPressed: () {
+                        setState(() {
+                          _isSatelliteView = !_isSatelliteView;
+                        });
+                      },
+                      tooltip: _isSatelliteView ? 'Switch to map view' : 'Switch to satellite view',
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          
           // Fuel type filter
           Positioned(
             top: 50,

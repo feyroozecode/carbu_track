@@ -10,7 +10,7 @@ import 'src/exceptions/error_logger.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  dotenv.load(fileName: '.env');
+  //await dotenv.load(fileName: '.env');
   final container = ProviderContainer(
     overrides: [], // define overrides scope for porviders
     observers: [AsyncErrorLogger()],

@@ -99,18 +99,20 @@ class Station with _$Station {
     if (fuelTypes.contains('SP95')) {
       prices['SP95'] = 1.85 + (DateTime.now().millisecondsSinceEpoch % 15) / 100;
     }
+     if (fuelTypes.contains('GPLc')) {
+      prices['GPLc'] = 0.85 + (DateTime.now().millisecondsSinceEpoch % 5) / 100;
+    }
+     if (fuelTypes.contains('E85')) {
+      prices['E85'] = 0.95 + (DateTime.now().millisecondsSinceEpoch % 10) / 100;
+    }
     if (fuelTypes.contains('SP98')) {
       prices['SP98'] = 1.95 + (DateTime.now().millisecondsSinceEpoch % 10) / 100;
     }
     if (fuelTypes.contains('E10')) {
       prices['E10'] = 1.75 + (DateTime.now().millisecondsSinceEpoch % 25) / 100;
     }
-    if (fuelTypes.contains('E85')) {
-      prices['E85'] = 0.95 + (DateTime.now().millisecondsSinceEpoch % 10) / 100;
-    }
-    if (fuelTypes.contains('GPLc')) {
-      prices['GPLc'] = 0.85 + (DateTime.now().millisecondsSinceEpoch % 5) / 100;
-    }
+   
+   
 
     Map<String, String> address = {};
     final addressPrefixes = ['addr:street', 'addr:city', 'addr:country', 'addr:district', 'addr:postcode'];

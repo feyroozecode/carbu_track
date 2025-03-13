@@ -52,8 +52,8 @@ extension ContextExtension on BuildContext {
         content: Text(message),
         backgroundColor: isError ? AppColors.error : AppColors.success,
         behavior: SnackBarBehavior.floating,
-        margin: EdgeInsets.all(AppSizes.s16),
-        padding: EdgeInsets.symmetric(
+        margin: const EdgeInsets.all(AppSizes.s16),
+        padding: const EdgeInsets.symmetric(
           horizontal: AppSizes.s16,
           vertical: AppSizes.s12,
         ),

@@ -18,7 +18,7 @@ class StationsRepository {
       final response = await http.get(
         Uri.parse(_remoteGeoJsonUrl),
         headers: {
-          'Authorization': 'token ${ApiKeys.githubToken}',
+          'Authorization': 'token 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', // ${ApiKeys.githubToken}',
           'Accept': 'application/vnd.github.v3.raw',
         },
       ).timeout(const Duration(seconds: 5));
