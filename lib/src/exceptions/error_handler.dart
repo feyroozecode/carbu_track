@@ -1,0 +1,77 @@
+import 'dart:io';
+import 'dart:ui';
+
+import 'package:carbu_track/src/exceptions/error_logger.dart';
+import 'package:carbu_track/src/localization/string_hardcoded.dart';
+import 'package:flutter/material.dart';
+
+import '../common/constants/app_spacing.dart';
+
+void registerErrorHandlers(ErrorLogger errorLogger) {
+  // * Show some error UI if any uncaught exception happens
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.presentError(details);
+    errorLogger.logError(details.exception, details.stack);
+  };
+  // * Handle errors from the underlying platform/OS
+  PlatformDispatcher.instance.onError = (Object error, StackTrace stack) {
+    errorLogger.logError(error, stack);
+    return true;
+  };
+  // * Show some error UI when any widget in the app fails to build
+  ErrorWidget.builder = (FlutterErrorDetails details) {
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.orange,
+          title: Text('An error occurred'.hardcoded),
+        ),
+        body: Builder(builder: (ctx) {
+          return Center(
+            child: Container(
+              decoration: const BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(25),
+                  )),
+              height: MediaQuery.of(ctx).size.height / 2,
+              margin: screenPadding,
+              padding: screenPadding,
+              child: Center(
+                  child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    details.toString(),
+                    maxLines: 5,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      OutlinedButton(
+                          onPressed: () {},
+                          child: const Text("Click to report the error ")),
+                      ElevatedButton(
+                          onPressed: () {
+                            showDialog(
+                                context: ctx,
+                                builder: (ctx) {
+                                  return const Column(
+                                    children: [
+                                      Text("Leaving the app..."),
+                                      CircularProgressIndicator(),
+                                    ],
+                                  );
+                                });
+                            Future.delayed(
+                                const Duration(seconds: 3), () => exit(0));
+                          },
+                          child: const Text("Restart the App"))
+                    ],
+                  )
+                ],
+              )),
+            ),
+          );
+        }));
+  };
+}

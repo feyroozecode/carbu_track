@@ -1,0 +1,6755 @@
+{
+    "type": "FeatureCollection",
+    "generator": "overpass-turbo",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+    "timestamp": "2025-03-11T10:28:30Z",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/378999602",
+          "amenity": "fuel",
+          "name": "Bazagor",
+          "source": "bing"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                2.0733048,
+                13.5404375
+              ],
+              [
+                2.0733712,
+                13.5403789
+              ],
+              [
+                2.0734267,
+                13.5404383
+              ],
+              [
+                2.0733602,
+                13.5404969
+              ],
+              [
+                2.0733048,
+                13.5404375
+              ]
+            ]
+          ]
+        },
+        "id": "way/378999602"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/482501479",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                2.086524,
+                13.5409188
+              ],
+              [
+                2.0865979,
+                13.5408527
+              ],
+              [
+                2.0867083,
+                13.5409545
+              ],
+              [
+                2.0866413,
+                13.5410379
+              ],
+              [
+                2.086524,
+                13.5409188
+              ]
+            ]
+          ]
+        },
+        "id": "way/482501479"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/500130305",
+          "amenity": "fuel",
+          "brand": "station 3stv",
+          "compressed_air": "no",
+          "name": "Station Sahara 3STV"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                2.1263027,
+                13.5419669
+              ],
+              [
+                2.126208,
+                13.5419984
+              ],
+              [
+                2.1261707,
+                13.5418923
+              ],
+              [
+                2.1262654,
+                13.5418608
+              ],
+              [
+                2.1263027,
+                13.5419669
+              ]
+            ]
+          ]
+        },
+        "id": "way/500130305"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/612600878",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                2.091447,
+                13.5345993
+              ],
+              [
+                2.0914468,
+                13.5345216
+              ],
+              [
+                2.0915857,
+                13.5345213
+              ],
+              [
+                2.0915858,
+                13.534599
+              ],
+              [
+                2.091447,
+                13.5345993
+              ]
+            ]
+          ]
+        },
+        "id": "way/612600878"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/1684070324",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total Mali Bero",
+          "name:en": "Total Mali Bero",
+          "name:fr": "Total Mali Bero"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0946344,
+            13.5349003
+          ]
+        },
+        "id": "node/1684070324"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/1689583297",
+          "amenity": "fuel",
+          "name": "Station OiLibya",
+          "project:mappingforniger": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1228799,
+            13.5088675
+          ]
+        },
+        "id": "node/1689583297"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/1690468531",
+          "addr:city": "Niamey",
+          "addr:country": "NE",
+          "addr:district": "Arrondissement Communal Niamey 2",
+          "addr:street": "Avenue Maourey",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "fuel:diesel": "yes",
+          "name": "Station Total Fillali",
+          "opening_hours": "24/7",
+          "operator": "private",
+          "wheelchair": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1129946,
+            13.5157697
+          ]
+        },
+        "id": "node/1690468531"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2041961302",
+          "amenity": "fuel",
+          "name": "Station Staro",
+          "name:fr": "Total Rive Droite"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.097782,
+            13.4939617
+          ]
+        },
+        "id": "node/2041961302"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2403592483",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "yes",
+          "name": "Station Total Cité Caisse",
+          "project:mappingforniger": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1282159,
+            13.5467165
+          ]
+        },
+        "id": "node/2403592483"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2403592499",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Star Concorde",
+          "project:mappingforniger": "yes",
+          "source": "survey;project:mappingforniger"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1290806,
+            13.5505218
+          ]
+        },
+        "id": "node/2403592499"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2418796633",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Algabit",
+          "project:mappingforniger": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1113679,
+            13.5219796
+          ]
+        },
+        "id": "node/2418796633"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2418796634",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station OiLibya",
+          "name:ar": "محطة أويليبيا",
+          "project:mappingforniger": "yes",
+          "shop": "kiosk",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1175797,
+            13.5142991
+          ]
+        },
+        "id": "node/2418796634"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2425321375",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Total Siège",
+          "project:mappingforniger": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1460919,
+            13.4913784
+          ]
+        },
+        "id": "node/2425321375"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2427772206",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Babati Oil",
+          "project:mappingforniger": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.155589,
+            13.488204
+          ]
+        },
+        "id": "node/2427772206"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2461435922",
+          "Projet": "Club SERVIR Csp HALISSA",
+          "addr:street": "Boulevard Alfa Maman Djobo KI-3",
+          "amenity": "fuel",
+          "brand": "Ola Energy",
+          "compressed_air": "no",
+          "currency:XOF": "yes",
+          "fuel:Essence_et": "yes",
+          "fuel:diesel": "yes",
+          "name": "Station Ola Energy Harobanda",
+          "operator": "Ola Energy",
+          "payment:cash": "yes",
+          "payment:contactless": "yes",
+          "payment:debit_cards": "yes",
+          "self_service": "no",
+          "shop": "wholesale",
+          "source": "survey",
+          "vending": "fuel"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0982509,
+            13.4905639
+          ]
+        },
+        "id": "node/2461435922"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2703832413",
+          "amenity": "fuel",
+          "compressed_air": "yes",
+          "name": "Station OiLibya",
+          "old_name": "Shell Boukoki",
+          "opening_hours": "24/7",
+          "wheelchair": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1225913,
+            13.5310081
+          ]
+        },
+        "id": "node/2703832413"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2703832414",
+          "alt_name:ar": "نفط ليبيا;أويل ليبيا",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:ar": "أويليبيا",
+          "brand:wikidata": "Q7081491",
+          "brand:wikipedia": "en:Oilibya",
+          "brand:wikipedia:ar": "أويليبيا",
+          "compressed_air": "no",
+          "fuel:diesel": "yes",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا",
+          "name:en": "Oilibya",
+          "old_name": "Station Tamesna 1",
+          "old_name:ar": "محطة تامسنة 1",
+          "operator": "Oilibya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1241794,
+            13.5357378
+          ]
+        },
+        "id": "node/2703832414"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2703832452",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Sahara 3STV"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1264775,
+            13.5426973
+          ]
+        },
+        "id": "node/2703832452"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2715220397",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total Grande Prière"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1343276,
+            13.523168
+          ]
+        },
+        "id": "node/2715220397"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2716807491",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total Centre"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1133756,
+            13.5128702
+          ]
+        },
+        "id": "node/2716807491"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2722943177",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "fuel:HGV_diesel": "yes",
+          "fuel:diesel": "yes",
+          "fuel:e85": "yes",
+          "fuel:lpg": "yes",
+          "name": "Ader Station Service",
+          "shop": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1212672,
+            13.5260371
+          ]
+        },
+        "id": "node/2722943177"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2722943178",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total Azawak"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1217975,
+            13.5370476
+          ]
+        },
+        "id": "node/2722943178"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2722943180",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "brand:wikipedia": "en:Oilibya",
+          "compressed_air": "no",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.120531,
+            13.5250114
+          ]
+        },
+        "id": "node/2722943180"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2722943182",
+          "alt_name": "Total Ader",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "fuel:HGV_diesel": "yes",
+          "fuel:diesel": "yes",
+          "fuel:e85": "yes",
+          "fuel:lpg": "yes",
+          "name": "Total",
+          "name:en": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1203475,
+            13.5238245
+          ]
+        },
+        "id": "node/2722943182"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2726697920",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Station Total Lazaret"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1183729,
+            13.5521311
+          ]
+        },
+        "id": "node/2726697920"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2730658291",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Wadata"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1429115,
+            13.5136417
+          ]
+        },
+        "id": "node/2730658291"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2778991305",
+          "amenity": "fuel",
+          "brand": "Station SARA",
+          "compressed_air": "no",
+          "name": "Station Sahara",
+          "name:en": "Station Sahara",
+          "name:fr": "Station Sahara",
+          "project:pdevii": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1157498,
+            13.5362527
+          ]
+        },
+        "id": "node/2778991305"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/2779017880",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Sikeye"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.144131,
+            13.5151548
+          ]
+        },
+        "id": "node/2779017880"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3156089482",
+          "amenity": "fuel",
+          "brand": "Bazagor Petroleum",
+          "fuel:diesel": "yes",
+          "name": "Station Bazagor",
+          "operator": "Bazagor Petroleum",
+          "shop": "yes",
+          "source": "survery"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0977416,
+            13.4883963
+          ]
+        },
+        "id": "node/3156089482"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3156298685",
+          "amenity": "fuel",
+          "name": "Oryx",
+          "name:fr": "Oryx",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1100585,
+            13.4827291
+          ]
+        },
+        "id": "node/3156298685"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3156298687",
+          "amenity": "fuel",
+          "brand": "Independent",
+          "name": "Petroba Service",
+          "shop": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1032658,
+            13.4903171
+          ]
+        },
+        "id": "node/3156298687"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3180489029",
+          "amenity": "fuel",
+          "fuel:diesel": "yes",
+          "name": "Station Babati",
+          "shop": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0627568,
+            13.5479209
+          ]
+        },
+        "id": "node/3180489029"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3180817245",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "yes",
+          "fuel:diesel": "yes",
+          "name": "Total Gadafawa",
+          "payment:uta": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0814861,
+            13.5315902
+          ]
+        },
+        "id": "node/3180817245"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3184362246",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "fuel:diesel": "yes",
+          "name": "OiLibya Gadafawa",
+          "name:ar": "أويليبيا"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0815007,
+            13.5309884
+          ]
+        },
+        "id": "node/3184362246"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3186526973",
+          "amenity": "fuel",
+          "brand": "Oriba",
+          "fuel:diesel": "yes",
+          "name": "Station Oriba Petrolium",
+          "source": "survery"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0698208,
+            13.5429727
+          ]
+        },
+        "id": "node/3186526973"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3191286219",
+          "amenity": "fuel",
+          "name": "OLA Energy",
+          "source": "survery"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1338574,
+            13.5065018
+          ]
+        },
+        "id": "node/3191286219"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3191286220",
+          "amenity": "fuel",
+          "name": "Station OiLibya",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1301522,
+            13.5033715
+          ]
+        },
+        "id": "node/3191286220"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3191286221",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Station Total Fahamey",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.146396,
+            13.5170579
+          ]
+        },
+        "id": "node/3191286221"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3191286222",
+          "alt_name": "Station Total Sapeurs Pompiers",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total",
+          "name:en": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1244795,
+            13.5071239
+          ]
+        },
+        "id": "node/3191286222"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3191286224",
+          "alt_name": "Station Total Liberté Salaman",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total",
+          "name:en": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1187475,
+            13.513558
+          ]
+        },
+        "id": "node/3191286224"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3191305351",
+          "amenity": "fuel",
+          "name": "Station Service Oilybia Bobiel",
+          "source": "survery"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0995132,
+            13.5512715
+          ]
+        },
+        "id": "node/3191305351"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3191305352",
+          "amenity": "fuel",
+          "name": "Station Oriba",
+          "source": "survery"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0995663,
+            13.5437865
+          ]
+        },
+        "id": "node/3191305352"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3191315013",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Route Ouallam"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1123763,
+            13.5512189
+          ]
+        },
+        "id": "node/3191315013"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3195298758",
+          "amenity": "fuel",
+          "name": "Station Service ORXY",
+          "project:pdevii": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0984244,
+            13.4791231
+          ]
+        },
+        "id": "node/3195298758"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3196803552",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Oriba Petrolium",
+          "source": "servey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1134756,
+            13.5190467
+          ]
+        },
+        "id": "node/3196803552"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3210453066",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "fuel:GTL_diesel": "yes",
+          "fuel:diesel": "yes",
+          "fuel:petrol": "yes",
+          "name": "Ola Station",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0976453,
+            13.4912053
+          ]
+        },
+        "id": "node/3210453066"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3259615840",
+          "amenity": "fuel",
+          "name": "Station Total route Torodi"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0836157,
+            13.4921976
+          ]
+        },
+        "id": "node/3259615840"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3261893604",
+          "amenity": "fuel",
+          "brand": "Total",
+          "fuel:diesel": "no",
+          "name": "Station Total Harobanda",
+          "operator": "Total",
+          "shop": "yes",
+          "source": "servey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0956834,
+            13.4910765
+          ]
+        },
+        "id": "node/3261893604"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3264910322",
+          "addr:street": "Boulevard Saraounia",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Station Total Bonkaney",
+          "name:en": "Station Tot1l Bonkaney",
+          "opening_hours": "24/7",
+          "operator": "private",
+          "source": "survey",
+          "wheelchair": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.140651,
+            13.5368153
+          ]
+        },
+        "id": "node/3264910322"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3264933575",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.182782,
+            13.5295273
+          ]
+        },
+        "id": "node/3264933575"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3264933576",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:ar": "أويليبيا",
+          "brand:fr": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "compressed_air": "no",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا",
+          "name:fr": "Oilibya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1676293,
+            13.5259217
+          ]
+        },
+        "id": "node/3264933576"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3264933577",
+          "amenity": "fuel",
+          "compressed_air": "yes",
+          "name": "Station Telwa"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1515737,
+            13.5213812
+          ]
+        },
+        "id": "node/3264933577"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3264933578",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Total Niamey 2000",
+          "name:en": "Station Total Niamey 2000",
+          "name:fr": "Station Total Niamey 2000"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1775306,
+            13.5280405
+          ]
+        },
+        "id": "node/3264933578"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3264958402",
+          "amenity": "fuel",
+          "brand": "Ego",
+          "name": "Ego Oil",
+          "old_name": "Sahara Oil",
+          "operator": "Ego Oil",
+          "shop": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1459065,
+            13.5309145
+          ]
+        },
+        "id": "node/3264958402"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3526252169",
+          "amenity": "fuel",
+          "name": "Station Oryx"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1095457,
+            13.4868956
+          ]
+        },
+        "id": "node/3526252169"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3526462057",
+          "alt_name:ar": "نفط ليبيا;أويل ليبيا",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:ar": "أويليبيا",
+          "brand:wikidata": "Q7081491",
+          "brand:wikipedia": "en:Oilibya",
+          "brand:wikipedia:ar": "أويليبيا",
+          "compressed_air": "no",
+          "fuel:1_25": "yes",
+          "fuel:HGV_diesel": "yes",
+          "fuel:biodiesel": "yes",
+          "fuel:diesel": "yes",
+          "fuel:lpg": "yes",
+          "name": "Ola Energy",
+          "name:ar": "أويليبيا",
+          "name:en": "Ola Energy",
+          "name:fr": "Ola Energy",
+          "payment:coins": "yes",
+          "payment:debit_cards": "yes",
+          "payment:notes": "yes",
+          "self_service": "no",
+          "wheelchair": "limited"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1081307,
+            13.5333909
+          ]
+        },
+        "id": "node/3526462057"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3598757413",
+          "amenity": "fuel",
+          "name": "Station Sahara",
+          "name:ar": "محطة الصحراء"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.121499,
+            13.5463407
+          ]
+        },
+        "id": "node/3598757413"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3667313885",
+          "alt_name": "Total Terminus",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total",
+          "name:en": "Total",
+          "name:fr": "Total",
+          "operator": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1134581,
+            13.504282
+          ]
+        },
+        "id": "node/3667313885"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3712886216",
+          "amenity": "fuel",
+          "brand": "Total",
+          "fuel:diesel": "yes",
+          "name": "Station Total Chateau 8",
+          "shop": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0867445,
+            13.5345311
+          ]
+        },
+        "id": "node/3712886216"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3713182635",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "fuel:diesel": "yes",
+          "name": "Station Sikieye",
+          "shop": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.099057,
+            13.5342052
+          ]
+        },
+        "id": "node/3713182635"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3713766125",
+          "amenity": "fuel",
+          "name": "Station Bazagor Pétroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1112426,
+            13.5611513
+          ]
+        },
+        "id": "node/3713766125"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3715036826",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Station Total francophonie"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1109005,
+            13.5657318
+          ]
+        },
+        "id": "node/3715036826"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3715036827",
+          "amenity": "fuel",
+          "fuel:diesel": "yes",
+          "name": "Station Oriba Petrolium",
+          "shop": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1106079,
+            13.5684684
+          ]
+        },
+        "id": "node/3715036827"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3719510134",
+          "amenity": "fuel",
+          "fuel:diesel": "yes",
+          "name": "Station Sonef"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0967223,
+            13.5442376
+          ]
+        },
+        "id": "node/3719510134"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3749574498",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total",
+          "name:en": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0976521,
+            13.5241611
+          ]
+        },
+        "id": "node/3749574498"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3766951466",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "fuel:HGV_diesel": "yes",
+          "fuel:biodiesel": "yes",
+          "fuel:diesel": "yes",
+          "fuel:lpg": "yes",
+          "name": "Station Total Les arènes",
+          "name:en": "Station Total Les arènes",
+          "name:fr": "Station Total Les arènes",
+          "wheelchair": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.139456,
+            13.5167521
+          ]
+        },
+        "id": "node/3766951466"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3823644902",
+          "alt_name:ar": "نفط ليبيا;أويل ليبيا",
+          "amenity": "fuel",
+          "brand": "ola",
+          "brand:ar": "أويليبيا",
+          "brand:wikidata": "Q7081491",
+          "brand:wikipedia": "en:Oilibya",
+          "brand:wikipedia:ar": "أويليبيا",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1138485,
+            13.5228598
+          ]
+        },
+        "id": "node/3823644902"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3823724258",
+          "alt_name:ar": "نفط ليبيا;أويل ليبيا",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:ar": "أويليبيا",
+          "brand:wikidata": "Q7081491",
+          "brand:wikipedia": "en:Oilibya",
+          "brand:wikipedia:ar": "أويليبيا",
+          "compressed_air": "no",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1115886,
+            13.522964
+          ]
+        },
+        "id": "node/3823724258"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3881761415",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Oriba Petrolium",
+          "source": "servey, bing"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1205125,
+            13.5193127
+          ]
+        },
+        "id": "node/3881761415"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3946404360",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Service Sonef"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.11319,
+            13.53494
+          ]
+        },
+        "id": "node/3946404360"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3987503415",
+          "amenity": "fuel",
+          "name": "BM Trading Oil",
+          "project:pdevii": "yes",
+          "shop": "kiosk",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0981352,
+            13.483483
+          ]
+        },
+        "id": "node/3987503415"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3987691527",
+          "amenity": "fuel",
+          "name": "Station BPS route torodi",
+          "project:pdevii": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0801082,
+            13.4923634
+          ]
+        },
+        "id": "node/3987691527"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3987691528",
+          "amenity": "fuel",
+          "name": "Station Bazagor Route Torodi",
+          "project:pdevii": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0754805,
+            13.4937994
+          ]
+        },
+        "id": "node/3987691528"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/3999641503",
+          "amenity": "fuel",
+          "name": "Morey Station Service"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0478338,
+            13.4997413
+          ]
+        },
+        "id": "node/3999641503"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4176227255",
+          "alt_name": "Total kalley sud",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total",
+          "name:en": "Total",
+          "name:fr": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1234211,
+            13.5158806
+          ]
+        },
+        "id": "node/4176227255"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4271027893",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "yes",
+          "name": "Station Total Zabarkan"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1383309,
+            13.5098529
+          ]
+        },
+        "id": "node/4271027893"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4395421301",
+          "alt_name": "Total Nouveau Marché",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total",
+          "name:en": "Total",
+          "name:fr": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1287402,
+            13.5082538
+          ]
+        },
+        "id": "node/4395421301"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4398614180",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Station Total Hallassi",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1456539,
+            13.5098842
+          ]
+        },
+        "id": "node/4398614180"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4401338906",
+          "addr:city": "Niamey",
+          "addr:country": "NE",
+          "addr:district": "Arrondissement Communal Niamey 2",
+          "addr:street": "Avenue Kaocen",
+          "amenity": "fuel",
+          "brand": "Morey",
+          "compressed_air": "no",
+          "name": "Morey Station Service",
+          "opening_hours": "Mo-Su 06:00-00:00",
+          "shop": "yes",
+          "wheelchair": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1166416,
+            13.5330092
+          ]
+        },
+        "id": "node/4401338906"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402185765",
+          "amenity": "fuel",
+          "name": "Station Bazagor de Taladjé",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1596315,
+            13.4915702
+          ]
+        },
+        "id": "node/4402185765"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402185766",
+          "amenity": "fuel",
+          "name": "Station Bazagor",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1592429,
+            13.4937839
+          ]
+        },
+        "id": "node/4402185766"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402185767",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:ar": "أويليبيا",
+          "brand:fr": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا",
+          "name:fr": "Oilibya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1543469,
+            13.5000336
+          ]
+        },
+        "id": "node/4402185767"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402185768",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Oryx",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1470921,
+            13.5087091
+          ]
+        },
+        "id": "node/4402185768"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402185769",
+          "amenity": "fuel",
+          "name": "Station Service 3SK",
+          "project:pdevii": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1427037,
+            13.4662064
+          ]
+        },
+        "id": "node/4402185769"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402185770",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Service Escadrille",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1591611,
+            13.4863039
+          ]
+        },
+        "id": "node/4402185770"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402185771",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Total route aeroport",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1455795,
+            13.4910427
+          ]
+        },
+        "id": "node/4402185771"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402186319",
+          "amenity": "fuel",
+          "brand": "Total",
+          "name": "Total Gamkalé",
+          "name:en": "Total Gamkalé",
+          "name:fr": "Total Gamkalé",
+          "project:pdevii": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1262721,
+            13.4899138
+          ]
+        },
+        "id": "node/4402186319"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402186797",
+          "amenity": "fuel",
+          "brand": "Oriba",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1439161,
+            13.5118145
+          ]
+        },
+        "id": "node/4402186797"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4402186889",
+          "addr:street": "Avenue de l'Arewa",
+          "amenity": "fuel",
+          "brand": "Station TILBA",
+          "compressed_air": "no",
+          "name": "Station Service Tilba",
+          "name:en": "Tilba Oil Service",
+          "name:fr": "Station Service Tilba",
+          "project:pdevii": "yes",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1268875,
+            13.5251203
+          ]
+        },
+        "id": "node/4402186889"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4470162854",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station AGPS",
+          "source": "servey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.131012,
+            13.554411
+          ]
+        },
+        "id": "node/4470162854"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4470162855",
+          "amenity": "fuel",
+          "name": "Station Rharous Oil",
+          "source": "servey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1221522,
+            13.5666658
+          ]
+        },
+        "id": "node/4470162855"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4496749412",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Algabit"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1225391,
+            13.5210026
+          ]
+        },
+        "id": "node/4496749412"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4801206121",
+          "amenity": "fuel",
+          "name": "Sonuci Petroba",
+          "name:fr": "Sonuci Petroba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0702737,
+            13.5584482
+          ]
+        },
+        "id": "node/4801206121"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4852490731",
+          "amenity": "fuel",
+          "name": "Staton Total Route Tillabery",
+          "name:en": "Total Route Tillabery",
+          "name:fr": "Staton Total Route Tillabery",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.079394,
+            13.533486
+          ]
+        },
+        "id": "node/4852490731"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4854224821",
+          "amenity": "fuel",
+          "fixme": "exact location"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1669904,
+            13.4681145
+          ]
+        },
+        "id": "node/4854224821"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4862727521",
+          "amenity": "fuel",
+          "name": "Tedt",
+          "name:en": "Tedt",
+          "name:fr": "Tedt"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0672775,
+            13.5356059
+          ]
+        },
+        "id": "node/4862727521"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4873241021",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total château 9"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1359648,
+            13.5137343
+          ]
+        },
+        "id": "node/4873241021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4873251322",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Soudji Gameye",
+          "name:en": "Soudji Gameye",
+          "name:fr": "Soudji Gameye"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1561094,
+            13.5233569
+          ]
+        },
+        "id": "node/4873251322"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4873251323",
+          "amenity": "fuel",
+          "name": "Station Orix",
+          "name:en": "Station Orix",
+          "name:fr": "Station Orix"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1403292,
+            13.4787635
+          ]
+        },
+        "id": "node/4873251323"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4873309321",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Oriba Route Filingue",
+          "name:en": "Oriba Route Filingue",
+          "name:fr": "Oriba Route Filingue"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1597621,
+            13.5246228
+          ]
+        },
+        "id": "node/4873309321"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4873394221",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1383867,
+            13.5240887
+          ]
+        },
+        "id": "node/4873394221"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4879424521",
+          "amenity": "fuel",
+          "name": "Station Oryx",
+          "name:en": "Station Oryx",
+          "name:fr": "Station Oryx"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1782024,
+            13.472074
+          ]
+        },
+        "id": "node/4879424521"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4879514921",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "brand:wikipedia": "en:Oilibya",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا",
+          "name:en": "Oilibya",
+          "name:fr": "Oilibya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1365383,
+            13.5227921
+          ]
+        },
+        "id": "node/4879514921"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4880298733",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Station Total Arewa",
+          "name:en": "Station Total",
+          "name:fr": "Station Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1348215,
+            13.5353225
+          ]
+        },
+        "id": "node/4880298733"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4880830027",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Oilibya",
+          "name:en": "Station Oilibya",
+          "name:fr": "Station Oilibya",
+          "old_name": "Station Tamesna 2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1305842,
+            13.5316761
+          ]
+        },
+        "id": "node/4880830027"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4881650826",
+          "amenity": "fuel",
+          "compressed_air": "yes",
+          "name": "Bazagor",
+          "name:en": "Bazagor",
+          "name:fr": "Bazagor"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1730102,
+            13.5270321
+          ]
+        },
+        "id": "node/4881650826"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4881667128",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Babati",
+          "name:en": "Station Babati",
+          "name:fr": "Station Babati"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1633366,
+            13.5254954
+          ]
+        },
+        "id": "node/4881667128"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4882154021",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Total 2CV Garage",
+          "name:en": "Total 2CV Garage",
+          "name:fr": "Total 2CV Garage"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1502642,
+            13.5254345
+          ]
+        },
+        "id": "node/4882154021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4894596390",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1871001,
+            13.4705504
+          ]
+        },
+        "id": "node/4894596390"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4894597844",
+          "amenity": "fuel",
+          "name": "Station 3SK",
+          "name:en": "Station 3SK",
+          "name:fr": "Station 3SK",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1903281,
+            13.4672683
+          ]
+        },
+        "id": "node/4894597844"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4894601860",
+          "amenity": "fuel",
+          "name": "Total Sorey Ego",
+          "name:en": "Total Sorey Ego",
+          "name:fr": "Total Sorey Ego",
+          "source": "survey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1968191,
+            13.4605025
+          ]
+        },
+        "id": "node/4894601860"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4895466421",
+          "amenity": "fuel",
+          "brand": "3 SK",
+          "name": "Station Service 3 SK",
+          "name:en": "Station Service 3 SK",
+          "name:fr": "Station Service 3 SK",
+          "operator": "3 SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1124626,
+            13.4851564
+          ]
+        },
+        "id": "node/4895466421"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4895476421",
+          "amenity": "fuel",
+          "name": "Station en construction",
+          "name:en": "Station",
+          "name:fr": "Station"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.109368,
+            13.47645
+          ]
+        },
+        "id": "node/4895476421"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4895476521",
+          "amenity": "fuel",
+          "brand": "BM Trading",
+          "name": "BM Trading",
+          "name:en": "BM Trading",
+          "name:fr": "BM Trading",
+          "operator": "BM Trading"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0408559,
+            13.4954827
+          ]
+        },
+        "id": "node/4895476521"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4896114323",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station RPS",
+          "name:en": "Station RPS",
+          "name:fr": "Station RPS",
+          "old_name": "Station Kourfey 1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1275732,
+            13.5448614
+          ]
+        },
+        "id": "node/4896114323"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4896179421",
+          "amenity": "fuel",
+          "name": "Oriba 2CV Garage",
+          "name:en": "Oriba 2CV garage",
+          "name:fr": "Oriba 2CV Garage"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1476732,
+            13.5237147
+          ]
+        },
+        "id": "node/4896179421"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4897986222",
+          "amenity": "fuel",
+          "name": "Station Sonef",
+          "name:en": "Station en construction",
+          "name:fr": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1254887,
+            13.5638781
+          ]
+        },
+        "id": "node/4897986222"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900658723",
+          "amenity": "fuel",
+          "name": "Station Service OLA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0810259,
+            13.5595138
+          ]
+        },
+        "id": "node/4900658723"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900668322",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0947094,
+            13.5654533
+          ]
+        },
+        "id": "node/4900668322"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900668323",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0923568,
+            13.5644266
+          ]
+        },
+        "id": "node/4900668323"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900701522",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0779435,
+            13.5534589
+          ]
+        },
+        "id": "node/4900701522"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900701523",
+          "amenity": "fuel",
+          "name": "Station Morey",
+          "name:en": "Station Morey",
+          "name:fr": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.048011,
+            13.557459
+          ]
+        },
+        "id": "node/4900701523"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900701524",
+          "amenity": "fuel",
+          "name": "Station 3SK",
+          "name:en": "Station 3SK",
+          "name:fr": "Station 3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.020512,
+            13.553224
+          ]
+        },
+        "id": "node/4900701524"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900702921",
+          "amenity": "fuel",
+          "name": "Station 3SK",
+          "name:en": "Station 3SK",
+          "name:fr": "Station 3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0740248,
+            13.5477573
+          ]
+        },
+        "id": "node/4900702921"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900703021",
+          "amenity": "fuel",
+          "name": "Station 3SK",
+          "name:en": "Station 3SK",
+          "name:fr": "Station 3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.116875,
+            13.5664006
+          ]
+        },
+        "id": "node/4900703021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900703022",
+          "amenity": "fuel",
+          "name": "RPS",
+          "name:en": "RPS",
+          "name:fr": "RPS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0792976,
+            13.5287478
+          ]
+        },
+        "id": "node/4900703022"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900703024",
+          "amenity": "fuel",
+          "name": "Station Oryx",
+          "name:en": "Station Oryx",
+          "name:fr": "Station Oryx"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.05633,
+            13.552103
+          ]
+        },
+        "id": "node/4900703024"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900703822",
+          "amenity": "fuel",
+          "name": "Station RPS",
+          "name:en": "Station RPS",
+          "name:fr": "Station RPS",
+          "phone": "20350145"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0837351,
+            13.562186
+          ]
+        },
+        "id": "node/4900703822"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4900776822",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.110718,
+            13.563675
+          ]
+        },
+        "id": "node/4900776822"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4902942921",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Alheri",
+          "name:en": "Total Alheri",
+          "name:fr": "Total Alheri"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1447742,
+            13.5443382
+          ]
+        },
+        "id": "node/4902942921"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4902942922",
+          "addr:street": "Boulevard Askia Mohamed",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station GG Banizoumbou 2",
+          "name:en": "Station GG Banizoumbou",
+          "name:fr": "Station GG Banizoumbou 2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1310846,
+            13.5498775
+          ]
+        },
+        "id": "node/4902942922"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4902953021",
+          "amenity": "fuel",
+          "name": "BM Trading Oil",
+          "name:en": "BM Trading Oil",
+          "name:fr": "BM Trading Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1225738,
+            13.5625616
+          ]
+        },
+        "id": "node/4902953021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4902970821",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Station RPS bobiel",
+          "name:en": "Total Bobiel",
+          "name:fr": "Total Bobiel"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0933079,
+            13.551554
+          ]
+        },
+        "id": "node/4902970821"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4902978421",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium Korey Bangou",
+          "name:en": "Oriba Petrolium Korey Bangou",
+          "name:fr": "Oriba Petrolium Korey Bangou"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0991342,
+            13.541073
+          ]
+        },
+        "id": "node/4902978421"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4902979721",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Dar Es Salam",
+          "name:en": "Total Dar Es Salam",
+          "name:fr": "Total Dar Es Salam"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0994587,
+            13.5488368
+          ]
+        },
+        "id": "node/4902979721"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4902990321",
+          "amenity": "fuel",
+          "name": "Station Oriba",
+          "name:en": "Station Oriba",
+          "name:fr": "Station Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1078526,
+            13.5918108
+          ]
+        },
+        "id": "node/4902990321"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4902992121",
+          "amenity": "fuel",
+          "name": "Station Ola"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1056107,
+            13.594549
+          ]
+        },
+        "id": "node/4902992121"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4903041221",
+          "amenity": "fuel",
+          "name": "Station Service Safa",
+          "name:en": "Station Service Safa",
+          "name:fr": "Station Service Safa"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1804166,
+            13.5092191
+          ]
+        },
+        "id": "node/4903041221"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4903979222",
+          "amenity": "fuel",
+          "name": "Station Oriba Petroleum",
+          "name:en": "Station Oriba Petroleum",
+          "name:fr": "Station Oriba Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0665993,
+            13.5349345
+          ]
+        },
+        "id": "node/4903979222"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4904011422",
+          "amenity": "fuel",
+          "brand": "Group Morey",
+          "name": "Station Morey",
+          "name:en": "Statiin Morey",
+          "name:fr": "Station Morey",
+          "operator": "Group Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0394076,
+            13.5630452
+          ]
+        },
+        "id": "node/4904011422"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4904020321",
+          "amenity": "fuel",
+          "name": "Oriba Peteolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0593959,
+            13.5501168
+          ]
+        },
+        "id": "node/4904020321"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4904020322",
+          "amenity": "fuel",
+          "name": "Station Oriba",
+          "name:en": "Station Oriba",
+          "name:fr": "Station Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0535251,
+            13.5539825
+          ]
+        },
+        "id": "node/4904020322"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4904083721",
+          "amenity": "fuel",
+          "name": "Station RPS",
+          "name:en": "Station RPS",
+          "name:fr": "Station RPS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0471965,
+            13.5580557
+          ]
+        },
+        "id": "node/4904083721"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4904096723",
+          "amenity": "fuel",
+          "name": "Station Sonef",
+          "name:en": "Station Sonef",
+          "name:fr": "Station Sonef"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0565816,
+            13.5516135
+          ]
+        },
+        "id": "node/4904096723"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4905571322",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "brand:wikipedia": "en:Oilibya",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا",
+          "name:en": "Oilibya",
+          "name:fr": "Oilibya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.140669,
+            13.5257823
+          ]
+        },
+        "id": "node/4905571322"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4906074121",
+          "amenity": "fuel",
+          "name": "Ténéré Services",
+          "name:en": "Ténéré Services",
+          "name:fr": "Ténéré Services"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1403321,
+            13.5192282
+          ]
+        },
+        "id": "node/4906074121"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4910097021",
+          "amenity": "fuel",
+          "name": "Station Sahara",
+          "name:en": "Station Sahara",
+          "name:fr": "Station Sahara"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1001514,
+            13.5572674
+          ]
+        },
+        "id": "node/4910097021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4910115422",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Taroum",
+          "name:ar": "توتال تاروم",
+          "name:en": "Total Taroum",
+          "name:fr": "Total Taroum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1123196,
+            13.5476633
+          ]
+        },
+        "id": "node/4910115422"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4911814722",
+          "amenity": "fuel",
+          "brand": "Oriba Petroleum",
+          "name": "Station Oriba Petroleum",
+          "name:en": "Oriba Petroleum",
+          "name:fr": "Station Oriba Petroleum",
+          "operator": "Groupe Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0683726,
+            13.5392899
+          ]
+        },
+        "id": "node/4911814722"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4911814723",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Annoura",
+          "name:ar": "توتال أنورا",
+          "name:en": "Total Annoura",
+          "name:fr": "Total Annoura"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1109819,
+            13.5405373
+          ]
+        },
+        "id": "node/4911814723"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4911815521",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Tourakou",
+          "name:ar": "توتال توراكو",
+          "name:en": "Total Tourakou",
+          "name:fr": "Total Tourakou"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1122444,
+            13.5434854
+          ]
+        },
+        "id": "node/4911815521"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4911844322",
+          "amenity": "fuel",
+          "name": "BM Trading Oil",
+          "name:en": "BM Trading Oil",
+          "name:fr": "BM Trading Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0411222,
+            13.5364806
+          ]
+        },
+        "id": "node/4911844322"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4911844421",
+          "amenity": "fuel",
+          "name": "Station RPS",
+          "name:en": "Station RPS",
+          "name:fr": "Station RPS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0849111,
+            13.5340083
+          ]
+        },
+        "id": "node/4911844421"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4911844521",
+          "amenity": "fuel",
+          "name": "Station Oryx",
+          "name:en": "Station Oryx",
+          "name:fr": "Station Oryx"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0383972,
+            13.5384
+          ]
+        },
+        "id": "node/4911844521"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915256322",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Dan Gao",
+          "name:en": "Total Dan Gao",
+          "name:fr": "Total Dan Gao"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.142035,
+            13.527569
+          ]
+        },
+        "id": "node/4915256322"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915337021",
+          "amenity": "fuel",
+          "name": "Station Azawad",
+          "name:en": "Station Azawad",
+          "name:fr": "Station Azawad"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.144082,
+            13.520223
+          ]
+        },
+        "id": "node/4915337021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915625422",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Route Filingué",
+          "name:en": "Total Route Filingué",
+          "name:fr": "Total Route Filingué"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1430771,
+            13.519386
+          ]
+        },
+        "id": "node/4915625422"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915655221",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total Gare routière",
+          "name:en": "Total Gare routière",
+          "name:fr": "Total Gare routière"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1408306,
+            13.5157639
+          ]
+        },
+        "id": "node/4915655221"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915760621",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:ar": "أويليبيا",
+          "brand:fr": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا",
+          "name:fr": "Oilibya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1109374,
+            13.512939
+          ]
+        },
+        "id": "node/4915760621"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915762222",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total Soni",
+          "name:en": "Total Soni",
+          "name:fr": "Total Soni"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.121898,
+            13.5200774
+          ]
+        },
+        "id": "node/4915762222"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915768421",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "compressed_air": "no",
+          "name": "Total Kalley Nord",
+          "name:en": "Total Kalley Nord",
+          "name:fr": "Total Kalley Nord"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1260876,
+            13.5182495
+          ]
+        },
+        "id": "node/4915768421"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915887322",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Gare Rimbo",
+          "name:en": "Total Gare Rimbo",
+          "name:fr": "Total Gare Rimbo"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1262308,
+            13.5352255
+          ]
+        },
+        "id": "node/4915887322"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915890321",
+          "addr:city": "Niamey",
+          "addr:postcode": "8001",
+          "amenity": "fuel",
+          "brand": "Oriba Petroleum",
+          "compressed_air": "yes",
+          "name": "Station Oriba Bani Fandou"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1417387,
+            13.5417211
+          ]
+        },
+        "id": "node/4915890321"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4915894721",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total Madina",
+          "name:en": "Total Madina",
+          "name:fr": "Total Madina"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1315529,
+            13.5326911
+          ]
+        },
+        "id": "node/4915894721"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4916044822",
+          "amenity": "fuel",
+          "brand": "Oriba Petroleum",
+          "compressed_air": "no",
+          "name": "Station Oriba Petroleum",
+          "name:en": "Oriba Petroleum",
+          "name:fr": "Station Oriba Petroleum",
+          "operator": "Groupe Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1218017,
+            13.5102155
+          ]
+        },
+        "id": "node/4916044822"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4916049721",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1198527,
+            13.5099354
+          ]
+        },
+        "id": "node/4916049721"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4916050121",
+          "amenity": "fuel",
+          "name": "Station 3SK",
+          "name:en": "Station 3SK",
+          "name:fr": "Station 3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.104628,
+            13.4687828
+          ]
+        },
+        "id": "node/4916050121"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4916056823",
+          "amenity": "fuel",
+          "name": "Total Gaweye",
+          "name:en": "Total Gaweye",
+          "name:fr": "Total Gaweye"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1064376,
+            13.4881856
+          ]
+        },
+        "id": "node/4916056823"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4919839121",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1176846,
+            13.5367572
+          ]
+        },
+        "id": "node/4919839121"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4919867021",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0929911,
+            13.5443672
+          ]
+        },
+        "id": "node/4919867021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4919888125",
+          "amenity": "fuel",
+          "name": "BM Trading Oil",
+          "name:en": "BM Trading Oil",
+          "name:fr": "BM Trading Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1066614,
+            13.5434634
+          ]
+        },
+        "id": "node/4919888125"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4919918121",
+          "amenity": "fuel",
+          "name": "Station Sahara",
+          "name:en": "Station Sahara",
+          "name:fr": "Station Sahara"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0932571,
+            13.5644805
+          ]
+        },
+        "id": "node/4919918121"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4919924021",
+          "amenity": "fuel",
+          "name": "Station Tamesna",
+          "name:en": "Station Tamesna",
+          "name:fr": "Station Tamesna"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0936272,
+            13.5723892
+          ]
+        },
+        "id": "node/4919924021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4919929821",
+          "amenity": "fuel",
+          "name": "BM Trading Oil",
+          "name:en": "BM Trading Oil",
+          "name:fr": "BM Trading Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1024804,
+            13.5661376
+          ]
+        },
+        "id": "node/4919929821"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4919940221",
+          "amenity": "fuel",
+          "name": "Station Morey",
+          "name:en": "Station Morey",
+          "name:fr": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0938121,
+            13.6065122
+          ]
+        },
+        "id": "node/4919940221"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4919955421",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0952769,
+            13.5242143
+          ]
+        },
+        "id": "node/4919955421"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4919957825",
+          "amenity": "fuel",
+          "name": "Station oriba",
+          "name:en": "Station Oryx",
+          "name:fr": "Station Oryx"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0811792,
+            13.5364325
+          ]
+        },
+        "id": "node/4919957825"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4921547924",
+          "amenity": "fuel",
+          "compressed_air": "yes",
+          "name": "Station Service Banifandou 2",
+          "name:en": "Station Service Banifandou 2",
+          "name:fr": "Station Service Banifandou 2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1379302,
+            13.5460164
+          ]
+        },
+        "id": "node/4921547924"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4921547925",
+          "amenity": "fuel",
+          "name": "Station Morey",
+          "name:en": "Station Morey",
+          "name:fr": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1978642,
+            13.5328548
+          ]
+        },
+        "id": "node/4921547925"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4921548421",
+          "amenity": "fuel",
+          "compressed_air": "yes",
+          "name": "Station Sahara",
+          "name:en": "Station Sahara",
+          "name:fr": "Station Sahara"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1362426,
+            13.5474703
+          ]
+        },
+        "id": "node/4921548421"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4921548422",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "compressed_air": "no",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا",
+          "name:en": "Oilibya",
+          "name:fr": "Oilibya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1444238,
+            13.5387704
+          ]
+        },
+        "id": "node/4921548422"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4921548423",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "compressed_air": "no",
+          "name": "Station Ola",
+          "name:ar": "أول",
+          "operator": "Oil Libya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1486434,
+            13.5350441
+          ]
+        },
+        "id": "node/4921548423"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4921548424",
+          "amenity": "fuel",
+          "brand": "Oilibya",
+          "brand:wikidata": "Q7081491",
+          "brand:wikipedia": "en:Oilibya",
+          "name": "Oilibya",
+          "name:ar": "أويليبيا",
+          "name:en": "Oilibya",
+          "name:fr": "Oilibya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1340144,
+            13.5202438
+          ]
+        },
+        "id": "node/4921548424"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4921548425",
+          "amenity": "fuel",
+          "name": "Station Kanem",
+          "name:en": "Station Kanem",
+          "name:fr": "Station Kanem"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1303273,
+            13.5176075
+          ]
+        },
+        "id": "node/4921548425"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4921548426",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Oilibya",
+          "name:ar": "محطة أويليبيا",
+          "name:en": "Station Oilibya",
+          "name:fr": "Station Oilibya"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1241633,
+            13.5121658
+          ]
+        },
+        "id": "node/4921548426"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4921548721",
+          "amenity": "fuel",
+          "name": "Station Petroba",
+          "name:en": "Station Petroba",
+          "name:fr": "Station Petroba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1867839,
+            13.5301078
+          ]
+        },
+        "id": "node/4921548721"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4922969321",
+          "amenity": "fuel",
+          "name": "Station Noma",
+          "name:en": "Station Cité Hanberi",
+          "name:fr": "Station Cité Hanberi"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0236729,
+            13.5728188
+          ]
+        },
+        "id": "node/4922969321"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4922979321",
+          "amenity": "fuel",
+          "name": "Station Bongoula",
+          "name:en": "Station Bongoula",
+          "name:fr": "Station Bongoula"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.9937936,
+            13.5966461
+          ]
+        },
+        "id": "node/4922979321"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4922979322",
+          "amenity": "fuel",
+          "name": "Station Morey",
+          "name:en": "Station Morey",
+          "name:fr": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0364489,
+            13.564551
+          ]
+        },
+        "id": "node/4922979322"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923002921",
+          "amenity": "fuel",
+          "name": "Station Oryx",
+          "name:en": "Station Oryx",
+          "name:fr": "Station Oryx"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0781986,
+            13.4931079
+          ]
+        },
+        "id": "node/4923002921"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923002922",
+          "amenity": "fuel",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0729903,
+            13.4950768
+          ]
+        },
+        "id": "node/4923002922"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923005721",
+          "amenity": "fuel",
+          "name": "IB Petrolium",
+          "name:en": "IB Petrolium",
+          "name:fr": "IB Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0582702,
+            13.4983744
+          ]
+        },
+        "id": "node/4923005721"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923007421",
+          "amenity": "fuel",
+          "name": "Station 3SK",
+          "name:en": "Station 3SK",
+          "name:fr": "Station 3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0531877,
+            13.4994176
+          ]
+        },
+        "id": "node/4923007421"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923009622",
+          "amenity": "fuel",
+          "name": "SAP Services",
+          "name:en": "SAP Services",
+          "name:fr": "SAP Services"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.045167,
+            13.4979168
+          ]
+        },
+        "id": "node/4923009622"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923009921",
+          "amenity": "fuel",
+          "name": "Station Service Escadrille",
+          "name:en": "Station Service Escadrille",
+          "name:fr": "Station Service Escadrille"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0503124,
+            13.5000261
+          ]
+        },
+        "id": "node/4923009921"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923026221",
+          "amenity": "fuel",
+          "name": "Rharous Oil",
+          "name:en": "Rharous Oil",
+          "name:fr": "Rharous Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0390612,
+            13.4946861
+          ]
+        },
+        "id": "node/4923026221"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923034021",
+          "amenity": "fuel",
+          "name": "Station 3SK",
+          "name:en": "Station 3SK",
+          "name:fr": "Station 3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1129688,
+            13.4818111
+          ]
+        },
+        "id": "node/4923034021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923067522",
+          "amenity": "fuel",
+          "name": "Motor Oil Trading",
+          "name:en": "Motor Oil Trading",
+          "name:fr": "Motor Oil Trading"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1324659,
+            13.4890104
+          ]
+        },
+        "id": "node/4923067522"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923092721",
+          "amenity": "fuel",
+          "name": "Station Oryx",
+          "name:en": "Station Oryx",
+          "name:fr": "Station Oryx"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1936511,
+            13.463305
+          ]
+        },
+        "id": "node/4923092721"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923096021",
+          "amenity": "fuel",
+          "name": "Total Marhaba",
+          "name:en": "Total Marhaba",
+          "name:fr": "Total Marhaba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2003829,
+            13.4583262
+          ]
+        },
+        "id": "node/4923096021"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923096821",
+          "amenity": "fuel",
+          "brand": "RPS",
+          "name": "Station RPS Sorey",
+          "name:en": "Station RPS Sorey",
+          "name:fr": "Station RPS Sorey",
+          "operator": "RPS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2257985,
+            13.4445416
+          ]
+        },
+        "id": "node/4923096821"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923099821",
+          "amenity": "fuel",
+          "compressed_air": "yes",
+          "name": "BM Trading Oil",
+          "name:en": "BM Trading Oil",
+          "name:fr": "BM Trading Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2326587,
+            13.4414631
+          ]
+        },
+        "id": "node/4923099821"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923099822",
+          "amenity": "fuel",
+          "name": "Soudji Gameye",
+          "name:en": "Soudji Gameye",
+          "name:fr": "Soudji Gameye"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2375265,
+            13.4392737
+          ]
+        },
+        "id": "node/4923099822"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923103122",
+          "amenity": "fuel",
+          "name": "Station Morey",
+          "name:en": "Station Morey",
+          "name:fr": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2058248,
+            13.4549506
+          ]
+        },
+        "id": "node/4923103122"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923112721",
+          "amenity": "fuel",
+          "name": "Station 3SK",
+          "name:en": "Station 3SK",
+          "name:fr": "Station 3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1920219,
+            13.462417
+          ]
+        },
+        "id": "node/4923112721"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4923129521",
+          "amenity": "fuel",
+          "name": "Station Oryx",
+          "name:en": "Station Oryx",
+          "name:fr": "Station Oryx"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1377771,
+            13.4764818
+          ]
+        },
+        "id": "node/4923129521"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4964333521",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Oriba Petrolium",
+          "name:en": "Oriba Petrolium",
+          "name:fr": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1086621,
+            13.5358047
+          ]
+        },
+        "id": "node/4964333521"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4966764573",
+          "amenity": "fuel",
+          "name": "Sonef Station Service"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.136652,
+            13.5413945
+          ]
+        },
+        "id": "node/4966764573"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4968235324",
+          "amenity": "fuel",
+          "name": "AGPS en construction",
+          "name:en": "AGPS en construction",
+          "name:fr": "AGPS en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0930897,
+            13.5410797
+          ]
+        },
+        "id": "node/4968235324"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4995517121",
+          "amenity": "fuel",
+          "name": "Station en construction",
+          "name:en": "Station en construction",
+          "name:fr": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0843199,
+            13.5514592
+          ]
+        },
+        "id": "node/4995517121"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/4997684621",
+          "amenity": "fuel",
+          "name": "Sonef Station Service Riyad"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0822884,
+            13.5516094
+          ]
+        },
+        "id": "node/4997684621"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/5013005921",
+          "amenity": "fuel",
+          "name": "Station Anas Petroleum",
+          "name:en": "Station Anas Petroleum",
+          "name:fr": "Station Anas Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1491177,
+            13.5381963
+          ]
+        },
+        "id": "node/5013005921"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/5014892836",
+          "amenity": "fuel",
+          "name": "Saham Agence Damergou"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1238678,
+            13.5221954
+          ]
+        },
+        "id": "node/5014892836"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/5014942623",
+          "amenity": "fuel",
+          "name": "Station RPS",
+          "name:en": "Station RPS",
+          "name:fr": "Station RPS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1460034,
+            13.5476851
+          ]
+        },
+        "id": "node/5014942623"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/5091572523",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "brand:wikipedia": "fr:Total (entreprise)",
+          "compressed_air": "yes",
+          "name": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1390443,
+            13.5176896
+          ]
+        },
+        "id": "node/5091572523"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/5091572524",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "brand:wikipedia": "fr:Total (entreprise)",
+          "compressed_air": "no",
+          "name": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1362483,
+            13.513857
+          ]
+        },
+        "id": "node/5091572524"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/5091573821",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "name": "Total"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1284134,
+            13.5079725
+          ]
+        },
+        "id": "node/5091573821"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/5124211565",
+          "amenity": "fuel",
+          "name": "Station BM Trading Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0418284,
+            13.535705
+          ]
+        },
+        "id": "node/5124211565"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/6028595287",
+          "amenity": "fuel",
+          "brand": "Total",
+          "brand:wikidata": "Q154037",
+          "brand:wikipedia": "fr:Total (entreprise)",
+          "compressed_air": "no",
+          "fuel:cng": "yes",
+          "name": "Total",
+          "opening_hours": "24/7",
+          "wheelchair": "limited"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1018447,
+            13.5187544
+          ]
+        },
+        "id": "node/6028595287"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/6194755987",
+          "amenity": "fuel",
+          "name": "Sobami"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1161006,
+            13.5617677
+          ]
+        },
+        "id": "node/6194755987"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/6354818285",
+          "amenity": "fuel",
+          "name": "Station Service STK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.9954203,
+            13.5955678
+          ]
+        },
+        "id": "node/6354818285"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/6535361485",
+          "amenity": "fuel",
+          "brand": "Oriba Petroteum",
+          "name": "Station Oriba",
+          "name:fr": "Station Oriba",
+          "operator": "Oriba Petroteum",
+          "shop": "yes"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1490786,
+            13.531331
+          ]
+        },
+        "id": "node/6535361485"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/6564557985",
+          "amenity": "fuel",
+          "name": "Station RPS Kossey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0273182,
+            13.5462744
+          ]
+        },
+        "id": "node/6564557985"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/6564558088",
+          "amenity": "fuel",
+          "name": "Station Sobami"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.141054,
+            13.5507857
+          ]
+        },
+        "id": "node/6564558088"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/6679920523",
+          "amenity": "fuel",
+          "brand": "SONIHY",
+          "fuel:HGV_diesel": "yes",
+          "fuel:diesel": "yes",
+          "name": "SONIHY",
+          "operator": "SONIHY",
+          "shop": "no"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0811417,
+            13.5362907
+          ]
+        },
+        "id": "node/6679920523"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/6855888779",
+          "amenity": "fuel"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.014725,
+            13.4729684
+          ]
+        },
+        "id": "node/6855888779"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/6987771133",
+          "amenity": "fuel",
+          "name": "Sahara Korey Bongou"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1035452,
+            13.5399803
+          ]
+        },
+        "id": "node/6987771133"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/7266069224",
+          "amenity": "fuel",
+          "name": "OLA Energy"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0389158,
+            13.4945372
+          ]
+        },
+        "id": "node/7266069224"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/7468674724",
+          "amenity": "fuel",
+          "name": "Morey Station Service"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.17015,
+            13.4288261
+          ]
+        },
+        "id": "node/7468674724"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/7482049333",
+          "amenity": "fuel",
+          "name": "Oriba Petroluim"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.102231,
+            13.5506764
+          ]
+        },
+        "id": "node/7482049333"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/7961226184",
+          "amenity": "fuel"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0084913,
+            13.53595
+          ]
+        },
+        "id": "node/7961226184"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/7992217610",
+          "amenity": "fuel",
+          "brand": "Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1106946,
+            13.4778754
+          ]
+        },
+        "id": "node/7992217610"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8101587756",
+          "amenity": "fuel",
+          "name": "OLA Energy"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0875291,
+            13.5512881
+          ]
+        },
+        "id": "node/8101587756"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8190386654",
+          "amenity": "fuel",
+          "name": "Station Sobami"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0900368,
+            13.5641846
+          ]
+        },
+        "id": "node/8190386654"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8247117195",
+          "amenity": "fuel",
+          "name": "APS Kolladé Saguia"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1149608,
+            13.4587376
+          ]
+        },
+        "id": "node/8247117195"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8264764817",
+          "amenity": "fuel",
+          "name": "Station Morey",
+          "name:en": "Station Morey saga",
+          "name:fr": "Station Morey Saga"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1440991,
+            13.4633121
+          ]
+        },
+        "id": "node/8264764817"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8365022506",
+          "amenity": "fuel",
+          "name": "Station APS Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0940003,
+            13.5737329
+          ]
+        },
+        "id": "node/8365022506"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496916617",
+          "amenity": "fuel",
+          "name": "MP Services"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0622597,
+            13.4975274
+          ]
+        },
+        "id": "node/8496916617"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496916718",
+          "amenity": "fuel",
+          "name": "3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1428493,
+            13.4664472
+          ]
+        },
+        "id": "node/8496916718"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496916917",
+          "amenity": "fuel",
+          "name": "Oriba Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0457568,
+            13.4988579
+          ]
+        },
+        "id": "node/8496916917"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496916918",
+          "amenity": "fuel",
+          "name": "OLA Energy"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0459166,
+            13.5016778
+          ]
+        },
+        "id": "node/8496916918"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496916919",
+          "amenity": "fuel",
+          "name": "En chantier"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.108494,
+            13.4649129
+          ]
+        },
+        "id": "node/8496916919"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496916920",
+          "amenity": "fuel",
+          "name": "3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1416192,
+            13.4685991
+          ]
+        },
+        "id": "node/8496916920"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496917017",
+          "amenity": "fuel",
+          "name": "Royal Eagle Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0119385,
+            13.4656997
+          ]
+        },
+        "id": "node/8496917017"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496917018",
+          "amenity": "fuel",
+          "name": "AKA Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1336506,
+            13.4822028
+          ]
+        },
+        "id": "node/8496917018"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496917019",
+          "amenity": "fuel",
+          "name": "ORIBA Saga"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1468679,
+            13.4605722
+          ]
+        },
+        "id": "node/8496917019"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496917020",
+          "amenity": "fuel",
+          "name": "BEN ALIM"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0429398,
+            13.5058142
+          ]
+        },
+        "id": "node/8496917020"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496917317",
+          "amenity": "fuel",
+          "name": "AHK Hydrocarbure"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1295586,
+            13.4869609
+          ]
+        },
+        "id": "node/8496917317"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8496917417",
+          "amenity": "fuel",
+          "name": "AHK Hydrocarbure"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1313902,
+            13.4847026
+          ]
+        },
+        "id": "node/8496917417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8497037826",
+          "amenity": "fuel",
+          "name": "Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2109044,
+            13.4521134
+          ]
+        },
+        "id": "node/8497037826"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8497039921",
+          "amenity": "fuel",
+          "name": "Station Noma"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2087901,
+            13.4539161
+          ]
+        },
+        "id": "node/8497039921"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8497098417",
+          "amenity": "fuel",
+          "name": "ALIM Services"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2185338,
+            13.4477468
+          ]
+        },
+        "id": "node/8497098417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8497128117",
+          "amenity": "fuel",
+          "name": "Station ENI Sorey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2415804,
+            13.4383215
+          ]
+        },
+        "id": "node/8497128117"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8497128118",
+          "amenity": "fuel",
+          "brand": "Oriba Petrolium",
+          "name": "Oriba Petrolium",
+          "operator": "Oriba Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2520562,
+            13.4336565
+          ]
+        },
+        "id": "node/8497128118"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8497128217",
+          "amenity": "fuel",
+          "brand": "Babati Oil",
+          "name": "Babati Sorey",
+          "operator": "Babati Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.248007,
+            13.4354049
+          ]
+        },
+        "id": "node/8497128217"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8497406145",
+          "amenity": "fuel",
+          "name": "OLA Energy"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.154524,
+            13.4999029
+          ]
+        },
+        "id": "node/8497406145"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8500193118",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Barakat"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1530115,
+            13.5222166
+          ]
+        },
+        "id": "node/8500193118"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8500193119",
+          "amenity": "fuel",
+          "name": "Station BMS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2005816,
+            13.5337866
+          ]
+        },
+        "id": "node/8500193119"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8500193120",
+          "amenity": "fuel",
+          "name": "Station RPS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2136713,
+            13.5379914
+          ]
+        },
+        "id": "node/8500193120"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8500193418",
+          "amenity": "fuel",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2038269,
+            13.5350503
+          ]
+        },
+        "id": "node/8500193418"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8500770821",
+          "amenity": "fuel",
+          "name": "Station Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1357759,
+            13.5209371
+          ]
+        },
+        "id": "node/8500770821"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8500889918",
+          "amenity": "fuel",
+          "name": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1294508,
+            13.5053549
+          ]
+        },
+        "id": "node/8500889918"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8507605317",
+          "addr:city": "Niamey",
+          "addr:street": "Rue du Tchad",
+          "amenity": "fuel",
+          "brand": "Morey",
+          "compressed_air": "no",
+          "fuel:Essence": "yes",
+          "fuel:diesel": "yes",
+          "name": "Station Morey",
+          "operator": "Groupe Morey",
+          "self_service": "no"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.121099,
+            13.5122337
+          ]
+        },
+        "id": "node/8507605317"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8509416717",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Dangara Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1323365,
+            13.5288603
+          ]
+        },
+        "id": "node/8509416717"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8509602117",
+          "amenity": "fuel",
+          "name": "Dan Gara Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1375751,
+            13.5317668
+          ]
+        },
+        "id": "node/8509602117"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8509742917",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Bazagor"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1260958,
+            13.5237331
+          ]
+        },
+        "id": "node/8509742917"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8510035417",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "MAEL Petrolium Services"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1298076,
+            13.5329859
+          ]
+        },
+        "id": "node/8510035417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8510205917",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "RPS"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1324797,
+            13.5490096
+          ]
+        },
+        "id": "node/8510205917"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8520034918",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1195794,
+            13.5374259
+          ]
+        },
+        "id": "node/8520034918"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8520099317",
+          "amenity": "fuel",
+          "name": "Station SONEF"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1227304,
+            13.5523693
+          ]
+        },
+        "id": "node/8520099317"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8520140417",
+          "amenity": "fuel",
+          "name": "Station SOBAMI"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1178745,
+            13.5619133
+          ]
+        },
+        "id": "node/8520140417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8520182517",
+          "amenity": "fuel",
+          "name": "Station ORIBA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1161301,
+            13.551817
+          ]
+        },
+        "id": "node/8520182517"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8520287017",
+          "amenity": "fuel",
+          "name": "Station 3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0971963,
+            13.532105
+          ]
+        },
+        "id": "node/8520287017"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8520713817",
+          "amenity": "fuel",
+          "name": "Station TELWA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1481432,
+            13.5444362
+          ]
+        },
+        "id": "node/8520713817"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8520714617",
+          "amenity": "fuel",
+          "name": "Station Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1477211,
+            13.5412652
+          ]
+        },
+        "id": "node/8520714617"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8522095818",
+          "amenity": "fuel",
+          "name": "Station Sobami"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.12853,
+            13.5624936
+          ]
+        },
+        "id": "node/8522095818"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8522102318",
+          "amenity": "fuel",
+          "name": "MAG Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1465323,
+            13.5520636
+          ]
+        },
+        "id": "node/8522102318"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8528344717",
+          "amenity": "fuel",
+          "name": "Station Babati"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1232832,
+            13.5667894
+          ]
+        },
+        "id": "node/8528344717"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8528471117",
+          "amenity": "fuel",
+          "name": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.110111,
+            13.5744355
+          ]
+        },
+        "id": "node/8528471117"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8528554232",
+          "amenity": "fuel",
+          "name": "Station Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0876352,
+            13.5774288
+          ]
+        },
+        "id": "node/8528554232"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8528649417",
+          "amenity": "fuel",
+          "name": "Station Nabil",
+          "name:fr": "Station Nabil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0945057,
+            13.5878947
+          ]
+        },
+        "id": "node/8528649417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8528658717",
+          "amenity": "fuel",
+          "name": "Station Service Référence"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0876057,
+            13.5872175
+          ]
+        },
+        "id": "node/8528658717"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8528720817",
+          "amenity": "fuel",
+          "name": "Station Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0987757,
+            13.5990546
+          ]
+        },
+        "id": "node/8528720817"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8528726717",
+          "amenity": "fuel",
+          "name": "Station APS Services"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0969422,
+            13.6001641
+          ]
+        },
+        "id": "node/8528726717"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8528850417",
+          "amenity": "fuel",
+          "name": "Station MOREY"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0922219,
+            13.616666
+          ]
+        },
+        "id": "node/8528850417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8528870717",
+          "amenity": "fuel",
+          "name": "Station KATCHALA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1001804,
+            13.5620943
+          ]
+        },
+        "id": "node/8528870717"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8529291918",
+          "amenity": "fuel",
+          "name": "Station 2éme Pompe"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0876088,
+            13.5593052
+          ]
+        },
+        "id": "node/8529291918"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8529310817",
+          "amenity": "fuel",
+          "name": "Station SAP Services"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0873638,
+            13.5553282
+          ]
+        },
+        "id": "node/8529310817"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8529375517",
+          "amenity": "fuel",
+          "name": "Station Riyad"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.083589,
+            13.548965
+          ]
+        },
+        "id": "node/8529375517"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8531935018",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Oriba Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0976306,
+            13.5346307
+          ]
+        },
+        "id": "node/8531935018"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8532106017",
+          "amenity": "fuel",
+          "name": "Station SOBAMI"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.092992,
+            13.5383124
+          ]
+        },
+        "id": "node/8532106017"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8532201018",
+          "amenity": "fuel",
+          "name": "Station OLA"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0833516,
+            13.5447911
+          ]
+        },
+        "id": "node/8532201018"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8532201032",
+          "amenity": "fuel",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0766448,
+            13.546316
+          ]
+        },
+        "id": "node/8532201032"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8532687619",
+          "amenity": "fuel",
+          "name": "Station Noma"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0642556,
+            13.5465786
+          ]
+        },
+        "id": "node/8532687619"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8532688217",
+          "amenity": "fuel",
+          "name": "Station Noma"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0764253,
+            13.5528541
+          ]
+        },
+        "id": "node/8532688217"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8532688219",
+          "amenity": "fuel",
+          "name": "Petroba Gomni"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0661225,
+            13.5523244
+          ]
+        },
+        "id": "node/8532688219"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8532842017",
+          "amenity": "fuel",
+          "name": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0448263,
+            13.5591663
+          ]
+        },
+        "id": "node/8532842017"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8532853717",
+          "amenity": "fuel",
+          "name": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0454795,
+            13.5728114
+          ]
+        },
+        "id": "node/8532853717"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8533027118",
+          "amenity": "fuel",
+          "name": "Station Morey",
+          "name:fr": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0329913,
+            13.5539963
+          ]
+        },
+        "id": "node/8533027118"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8533083617",
+          "amenity": "fuel",
+          "name": "Station Morey",
+          "name:fr": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0282755,
+            13.5702043
+          ]
+        },
+        "id": "node/8533083617"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8533496720",
+          "amenity": "fuel",
+          "name": "Station Oriba",
+          "name:fr": "Station Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0486508,
+            13.5315462
+          ]
+        },
+        "id": "node/8533496720"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8533518517",
+          "amenity": "fuel",
+          "name": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0554284,
+            13.5273974
+          ]
+        },
+        "id": "node/8533518517"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8533626518",
+          "amenity": "fuel",
+          "name": "Station Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0323127,
+            13.5419846
+          ]
+        },
+        "id": "node/8533626518"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8533627217",
+          "amenity": "fuel",
+          "name": "Station Babati"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0353395,
+            13.5400416
+          ]
+        },
+        "id": "node/8533627217"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8533653417",
+          "amenity": "fuel",
+          "name": "Station 3SK"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0246902,
+            13.5491428
+          ]
+        },
+        "id": "node/8533653417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8534128817",
+          "amenity": "fuel",
+          "name": "Station Oriba Petroleum",
+          "name:fr": "Station Oriba Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0630935,
+            13.5293554
+          ]
+        },
+        "id": "node/8534128817"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8534166417",
+          "amenity": "fuel",
+          "name": "Station Sahara"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0633244,
+            13.564936
+          ]
+        },
+        "id": "node/8534166417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8534213149",
+          "amenity": "fuel",
+          "name": "Station Cybor",
+          "name:fr": "Station Cybor"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0908509,
+            13.5719802
+          ]
+        },
+        "id": "node/8534213149"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8537259217",
+          "amenity": "fuel",
+          "brand": "Babati Oil",
+          "compressed_air": "no",
+          "name": "Babati Kalley Est",
+          "operator": "Babati Oil",
+          "self_service": "no"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1264599,
+            13.5126047
+          ]
+        },
+        "id": "node/8537259217"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8620083817",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.108963,
+            13.5375439
+          ]
+        },
+        "id": "node/8620083817"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8621567217",
+          "amenity": "fuel",
+          "name": "Station Ola"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1093165,
+            13.5778987
+          ]
+        },
+        "id": "node/8621567217"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8665235017",
+          "amenity": "fuel",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1358204,
+            13.5079486
+          ]
+        },
+        "id": "node/8665235017"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8698453217",
+          "amenity": "fuel",
+          "name": "Station Eni Petroleum",
+          "name:fr": "Station Eni Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1216449,
+            13.5711367
+          ]
+        },
+        "id": "node/8698453217"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8758160017",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Babati",
+          "name:en": "Station Babati",
+          "name:fr": "Station Babati"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1285827,
+            13.5228229
+          ]
+        },
+        "id": "node/8758160017"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8764449617",
+          "amenity": "fuel",
+          "name": "Station Bazagor",
+          "name:en": "Station Bazagor",
+          "name:fr": "Station Bazagor"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0665093,
+            13.5371976
+          ]
+        },
+        "id": "node/8764449617"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8868886317",
+          "amenity": "fuel",
+          "name": "ASM Petrolium"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1033567,
+            13.5959507
+          ]
+        },
+        "id": "node/8868886317"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8869358117",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station BABATI"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1098331,
+            13.5390788
+          ]
+        },
+        "id": "node/8869358117"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8925950017",
+          "amenity": "fuel",
+          "name": "Station Babati"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1066067,
+            13.5507955
+          ]
+        },
+        "id": "node/8925950017"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8925950117",
+          "amenity": "fuel",
+          "name": "Station Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0906592,
+            13.5515795
+          ]
+        },
+        "id": "node/8925950117"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8957749318",
+          "amenity": "fuel",
+          "name": "Station Abdel"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0991579,
+            13.5649797
+          ]
+        },
+        "id": "node/8957749318"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/8957750817",
+          "amenity": "fuel",
+          "name": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1104926,
+            13.5702016
+          ]
+        },
+        "id": "node/8957750817"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9076565420",
+          "amenity": "fuel",
+          "name": "Babati"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0760363,
+            13.5656837
+          ]
+        },
+        "id": "node/9076565420"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9076577517",
+          "amenity": "fuel",
+          "name": "APS Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1390107,
+            13.5526436
+          ]
+        },
+        "id": "node/9076577517"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9076577518",
+          "amenity": "fuel",
+          "name": "Station ASM"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.2283611,
+            13.4434776
+          ]
+        },
+        "id": "node/9076577518"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9120173117",
+          "amenity": "fuel",
+          "name": "Station SOBAMI"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1435286,
+            13.5428804
+          ]
+        },
+        "id": "node/9120173117"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9120173217",
+          "amenity": "fuel",
+          "name": "Station Service Noma",
+          "name:en": "Station Service Noma",
+          "name:fr": "Station Service Noma"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0486554,
+            13.5567025
+          ]
+        },
+        "id": "node/9120173217"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9120173218",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Babati",
+          "name:fr": "Station Babati"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1659408,
+            13.5256426
+          ]
+        },
+        "id": "node/9120173218"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9120173219",
+          "amenity": "fuel",
+          "name": "Station Babati",
+          "name:en": "Station Babati",
+          "name:fr": "Station Babati"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1500354,
+            13.5304928
+          ]
+        },
+        "id": "node/9120173219"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9120173317",
+          "amenity": "fuel",
+          "name": "Station Sikieye",
+          "name:en": "Station Sikieye",
+          "name:fr": "Station Sikieye"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1717087,
+            13.5094157
+          ]
+        },
+        "id": "node/9120173317"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9198095417",
+          "amenity": "fuel",
+          "name": "Station Noma"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0705671,
+            13.5691576
+          ]
+        },
+        "id": "node/9198095417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9198113717",
+          "amenity": "fuel",
+          "name": "Station Sahara"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0660684,
+            13.570959
+          ]
+        },
+        "id": "node/9198113717"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9243188917",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1353166,
+            13.5128172
+          ]
+        },
+        "id": "node/9243188917"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9252875517",
+          "amenity": "fuel",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1139204,
+            13.5423615
+          ]
+        },
+        "id": "node/9252875517"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9252935017",
+          "amenity": "fuel",
+          "name": "Station Morey",
+          "name:fr": "Station Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.060109,
+            13.5260835
+          ]
+        },
+        "id": "node/9252935017"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9291361017",
+          "amenity": "fuel",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0267898,
+            13.547222
+          ]
+        },
+        "id": "node/9291361017"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9330001617",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1290005,
+            13.5307069
+          ]
+        },
+        "id": "node/9330001617"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9383805217",
+          "amenity": "fuel",
+          "name": "Station Bazagor Wadata"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1422135,
+            13.5135756
+          ]
+        },
+        "id": "node/9383805217"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9421360617",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Petronium",
+          "old_name": "Station Sahara"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1347996,
+            13.5485485
+          ]
+        },
+        "id": "node/9421360617"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9458230218",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station Eni"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1806485,
+            13.5289875
+          ]
+        },
+        "id": "node/9458230218"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9458268917",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1472342,
+            13.5358677
+          ]
+        },
+        "id": "node/9458268917"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9484634217",
+          "amenity": "fuel",
+          "name": "Sotrap"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0870037,
+            13.5485569
+          ]
+        },
+        "id": "node/9484634217"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9494160917",
+          "amenity": "fuel",
+          "name": "Station Petroba Bangoula"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            1.9953949,
+            13.5958333
+          ]
+        },
+        "id": "node/9494160917"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9574163317",
+          "amenity": "fuel",
+          "brand": "Morey",
+          "compressed_air": "no",
+          "fuel:diesel": "yes",
+          "fuel:octane_95": "yes",
+          "name": "Morey",
+          "operator": "Morey",
+          "self_service": "no"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1231002,
+            13.5109037
+          ]
+        },
+        "id": "node/9574163317"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9714219717",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.121722,
+            13.528121
+          ]
+        },
+        "id": "node/9714219717"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9714219817",
+          "amenity": "fuel",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1366655,
+            13.5372385
+          ]
+        },
+        "id": "node/9714219817"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9727071517",
+          "amenity": "fuel",
+          "compressed_air": "yes",
+          "name": "Station en construction"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0778568,
+            13.5362963
+          ]
+        },
+        "id": "node/9727071517"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9738120417",
+          "amenity": "fuel",
+          "name": "Station Eni"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0834367,
+            13.5770276
+          ]
+        },
+        "id": "node/9738120417"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/9901305280",
+          "addr:street": "Eagle Petroleum",
+          "amenity": "fuel",
+          "name": "Eagle Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.3489206,
+            13.4148783
+          ]
+        },
+        "id": "node/9901305280"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10118452542",
+          "amenity": "fuel",
+          "name": "Eni"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0943084,
+            13.5699041
+          ]
+        },
+        "id": "node/10118452542"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10738918472",
+          "amenity": "fuel",
+          "name": "Stattion RPS Lazaret"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1118078,
+            13.5551271
+          ]
+        },
+        "id": "node/10738918472"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10822980489",
+          "amenity": "fuel",
+          "name": "Royal Eagle Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.179693,
+            13.5210008
+          ]
+        },
+        "id": "node/10822980489"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10822980490",
+          "amenity": "fuel",
+          "name": "Sabami"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1804376,
+            13.5150828
+          ]
+        },
+        "id": "node/10822980490"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10822980491",
+          "amenity": "fuel",
+          "name": "Sonef"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1776654,
+            13.5038561
+          ]
+        },
+        "id": "node/10822980491"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823010804",
+          "amenity": "fuel",
+          "name": "Oriba Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0796524,
+            13.5559433
+          ]
+        },
+        "id": "node/10823010804"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823043344",
+          "amenity": "fuel",
+          "name": "Royal Eagle Petroleum",
+          "name:en": "Royal Eagle Petroleum",
+          "name:fr": "Royal Eagle Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.143859,
+            13.5607405
+          ]
+        },
+        "id": "node/10823043344"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823043345",
+          "amenity": "fuel",
+          "name": "Station Eni"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0821826,
+            13.5934638
+          ]
+        },
+        "id": "node/10823043345"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823047544",
+          "amenity": "fuel",
+          "name": "Station Babati Tchangarey",
+          "operator": "Babati Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1018533,
+            13.5969282
+          ]
+        },
+        "id": "node/10823047544"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823048930",
+          "amenity": "fuel",
+          "name": "Morey"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1740848,
+            13.5138891
+          ]
+        },
+        "id": "node/10823048930"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823048931",
+          "amenity": "fuel",
+          "name": "Sonef"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1437766,
+            13.5496102
+          ]
+        },
+        "id": "node/10823048931"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823048932",
+          "amenity": "fuel",
+          "name": "APS Oil"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.137832,
+            13.5545448
+          ]
+        },
+        "id": "node/10823048932"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823048933",
+          "amenity": "fuel",
+          "compressed_air": "no",
+          "name": "Bazagor Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1357781,
+            13.5563275
+          ]
+        },
+        "id": "node/10823048933"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823048934",
+          "amenity": "fuel",
+          "name": "Bazagor"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1331538,
+            13.5586597
+          ]
+        },
+        "id": "node/10823048934"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/10823067805",
+          "amenity": "fuel",
+          "name": "Station Noma"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0474879,
+            13.5657032
+          ]
+        },
+        "id": "node/10823067805"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/11065789367",
+          "amenity": "fuel",
+          "name": "Boula Petroleum"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1390922,
+            13.5535062
+          ]
+        },
+        "id": "node/11065789367"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/11094113047",
+          "amenity": "fuel",
+          "name": "Oriba"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1088975,
+            13.5376425
+          ]
+        },
+        "id": "node/11094113047"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/11146317168",
+          "amenity": "fuel",
+          "name": "Ego Services"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0862698,
+            13.4913973
+          ]
+        },
+        "id": "node/11146317168"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/11248547461",
+          "amenity": "fuel",
+          "name": "Station Kalley Plateau"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.1494909,
+            13.5541886
+          ]
+        },
+        "id": "node/11248547461"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/12585447652",
+          "amenity": "fuel",
+          "name": "Bazagor"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0350185,
+            13.5662933
+          ]
+        },
+        "id": "node/12585447652"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "node/12585498985",
+          "amenity": "fuel",
+          "name": "Station Noma"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            2.0030138,
+            13.5926954
+          ]
+        },
+        "id": "node/12585498985"
+      }
+    ]
+  }
+  
