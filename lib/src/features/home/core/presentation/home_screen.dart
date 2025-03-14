@@ -30,49 +30,20 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     ];
   }
 
-  List<BottomNavigationBarItem> items = const <BottomNavigationBarItem>[
+  // refresh screen
+
+
+
+  List<BottomNavigationBarItem> items =  <BottomNavigationBarItem>[
     //BottomNavigationBarItem(label: "Accueil", icon: Icon(Icons.home)),
     BottomNavigationBarItem(label: "Carte", icon: Icon(Icons.map)),
     BottomNavigationBarItem(label: "Favoris", icon: Icon(Icons.favorite)),
-    BottomNavigationBarItem(label: "Plus", icon: Icon(Icons.settings)),
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: isFullScreen && selectedTab == 0
-          ? null
-          : AppBar(
-              title: const Text('CarbuTrack',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: AppColors.primary,
-                  )),
-              actions: [
-                if (selectedTab == 0) // Show fullscreen toggle only for map
-                  IconButton(
-                    icon: Icon(isFullScreen
-                        ? Icons.fullscreen_exit
-                        : Icons.fullscreen),
-                    onPressed: () {
-                      setState(() {
-                        isFullScreen = !isFullScreen;
-                      });
-                    },
-                  ),
-                Stack(
+    BottomNavigationBarItem(label: "Notifis", icon:  Stack(
                   children: [
                     IconButton(
                       icon: const Icon(Icons.notifications),
                       onPressed: () {
-                        // Handle notification button press
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            content: Text('Notifications coming soon!'),
-                            duration: Duration(seconds: 2),
-                          ),
-                        );
+                        
                       },
                     ),
                     Positioned(
@@ -100,7 +71,40 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       ),
                     ),
                   ],
+                ),),
+    BottomNavigationBarItem(label: "Plus", icon: Icon(Icons.settings)),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: isFullScreen && selectedTab == 0
+          ? null
+          : AppBar(
+              title: const Text('CarbuTrack',
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.primary,
+                  )),
+              actions: [
+                if (selectedTab == 0) // Show fullscreen toggle only for map
+                  IconButton(
+                    icon: Icon(Icons.refresh),
+                    onPressed: () {
+                      setState(() {});
+                    },
+                  ),
+                IconButton(
+                  icon: Icon(
+                      isFullScreen ? Icons.fullscreen_exit : Icons.fullscreen),
+                  onPressed: () {
+                    setState(() {
+                      isFullScreen = !isFullScreen;
+                    });
+                  },
                 ),
+               
               ],
             ),
       backgroundColor: AppColors.background,
