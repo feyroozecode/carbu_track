@@ -32,46 +32,45 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   // refresh screen
 
-
-
-  List<BottomNavigationBarItem> items =  <BottomNavigationBarItem>[
+  List<BottomNavigationBarItem> items = <BottomNavigationBarItem>[
     //BottomNavigationBarItem(label: "Accueil", icon: Icon(Icons.home)),
     BottomNavigationBarItem(label: "Carte", icon: Icon(Icons.map)),
     BottomNavigationBarItem(label: "Favoris", icon: Icon(Icons.favorite)),
-    BottomNavigationBarItem(label: "Notifis", icon:  Stack(
-                  children: [
-                    IconButton(
-                      icon: const Icon(Icons.notifications),
-                      onPressed: () {
-                        
-                      },
-                    ),
-                    Positioned(
-                      right: 8,
-                      top: 8,
-                      child: Container(
-                        padding: const EdgeInsets.all(2),
-                        decoration: BoxDecoration(
-                          color: Colors.red,
-                          borderRadius: BorderRadius.circular(6),
-                        ),
-                        constraints: const BoxConstraints(
-                          minWidth: 12,
-                          minHeight: 12,
-                        ),
-                        child: const Text(
-                          '2',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 8,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),),
+    BottomNavigationBarItem(
+      label: "Notifis",
+      icon: Stack(
+        children: [
+          IconButton(
+            icon: const Icon(Icons.notifications),
+            onPressed: () {},
+          ),
+          Positioned(
+            right: 8,
+            top: 8,
+            child: Container(
+              padding: const EdgeInsets.all(2),
+              decoration: BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.circular(6),
+              ),
+              constraints: const BoxConstraints(
+                minWidth: 12,
+                minHeight: 12,
+              ),
+              child: const Text(
+                '2',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 8,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
     BottomNavigationBarItem(label: "Plus", icon: Icon(Icons.settings)),
   ];
 
@@ -104,7 +103,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     });
                   },
                 ),
-               
               ],
             ),
       backgroundColor: AppColors.background,

@@ -150,6 +150,8 @@ class Station with _$Station {
       isOpen: false,
     );
   }
+
+  //
 }
 
 extension StationX on Station {

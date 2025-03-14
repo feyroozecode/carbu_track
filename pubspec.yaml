@@ -59,6 +59,7 @@ dependencies:
   permission_handler: ^11.4.0
   flutter_map: ^7.0.2
   flutter_map_marker_cluster: ^1.4.0
+  map_launcher: ^3.5.0
 
 dev_dependencies:
   flutter_test:

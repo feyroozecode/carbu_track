@@ -6,8 +6,8 @@ import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:geolocator/geolocator.dart';
+import 'package:map_launcher/map_launcher.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../../common/constants/app_colors.dart';
 import '../../domain/station.dart';
@@ -218,18 +218,13 @@ class _MapScreenState extends ConsumerState<MapScreen>
   }
 
   Future<void> _openMaps(double lat, double lng) async {
-    final url = "https://www.google.com/maps/search/?api=1&query=$lat,$lng";
-    if (await canLaunchUrl(
-      Uri.https(
-        'www.google.com',
-        '/maps/search',
-        {'api': '1', 'query': '$lat,$lng'},
-      ),
-    )) {
-      await launchUrl(Uri.parse(url));
-    } else {
-      debugPrint('Could not launch $url');
-    }
+    await MapLauncher.showMarker(
+      mapType: MapType.google,
+      coords: Coords(lat, lng),
+      title: ref.watch(nearestStationProvider)!.name,
+      description: ref.watch(nearestStationProvider)!.name +
+          ref.watch(nearestStationProvider)!.brand!,
+    );
   }
 
   void _showStationDetails(Station station) {
@@ -504,47 +499,19 @@ class _MapScreenState extends ConsumerState<MapScreen>
     );
   }
 
-  // Widget _buildLoadingStep(String stepName, bool isCompleted) {
-  //   return Row(
-  //     children: [
-  //       Container(
-  //         width: 24,
-  //         height: 24,
-  //         decoration: BoxDecoration(
-  //           shape: BoxShape.circle,
-  //           color: isCompleted ? Colors.green : Colors.grey[300],
-  //         ),
-  //         child: Center(
-  //           child: isCompleted
-  //               ? const Icon(
-  //                   Icons.check,
-  //                   color: Colors.white,
-  //                   size: 16,
-  //                 )
-  //               : SizedBox(
-  //                   width: 12,
-  //                   height: 12,
-  //                   child: CircularProgressIndicator(
-  //                     strokeWidth: 2,
-  //                     valueColor: AlwaysStoppedAnimation<Color>(
-  //                       AppColors.primary,
-  //                     ),
-  //                   ),
-  //                 ),
-  //         ),
-  //       ),
-  //       const SizedBox(width: 12),
-  //       Text(
-  //         stepName,
-  //         style: TextStyle(
-  //           fontSize: 14,
-  //           color: isCompleted ? Colors.green : Colors.grey[700],
-  //           fontWeight: isCompleted ? FontWeight.bold : FontWeight.normal,
-  //         ),
-  //       ),
-  //     ],
-  //   );
-  // }
+  int _calculateStationsWithin1Km(LatLng userLocation, List<Station> stations) {
+    const double radiusInKm = 1.0;
+    final Distance distance = Distance();
+
+    return stations.where((station) {
+      final double distanceToStation = distance.as(
+        LengthUnit.Kilometer,
+        userLocation,
+        LatLng(station.latitude, station.longitude),
+      );
+      return distanceToStation <= radiusInKm;
+    }).length;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -553,6 +520,11 @@ class _MapScreenState extends ConsumerState<MapScreen>
     final nearestStation = ref.watch(nearestStationProvider);
     final selectedFuelType = ref.watch(selectedFuelTypeProvider);
     final isLoading = ref.watch(stationsLoadingProvider);
+
+    // Calculate the number of stations within 1 km
+    final int stationsWithin1Km = userLocation != null
+        ? _calculateStationsWithin1Km(userLocation, stations)
+        : 0;
 
     // Create markers from stations
     final List<Marker> markers = stations.map((station) {
@@ -636,6 +608,38 @@ class _MapScreenState extends ConsumerState<MapScreen>
     return Scaffold(
       body: Stack(
         children: [
+          // Floating widget to show station counts
+          Positioned(
+            top: MediaQuery.of(context).padding.top + 60,
+            right: 16,
+            child: Card(
+              elevation: 4,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    Text(
+                      'Stations within 1 km: $stationsWithin1Km',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    Text(
+                      'Total Stations: ${stations.length}',
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
           // Map with fade-in animation
           FadeTransition(
             opacity: _mapFadeController,

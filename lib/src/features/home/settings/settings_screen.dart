@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import '../../../common/constants/app_colors.dart';
+import 'providers/setting_provider.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final settings = ref.watch(settingsProvider);
+
     return ListView(
       children: [
         const SizedBox(height: 16),
@@ -17,20 +19,24 @@ class SettingsScreen extends ConsumerWidget {
             _buildSettingItem(
               icon: Icons.language,
               title: 'Langue',
-              subtitle: 'Français',
-              onTap: () {},
+              subtitle: settings.language,
+              onTap: () => ref
+                  .read(settingsProvider.notifier)
+                  .updateLanguage('Français'),
             ),
             _buildSettingItem(
               icon: Icons.dark_mode,
               title: 'Thème',
-              subtitle: 'Clair',
-              onTap: () {},
+              subtitle: settings.theme,
+              onTap: () =>
+                  ref.read(settingsProvider.notifier).updateTheme('Sombre'),
             ),
             _buildSettingItem(
               icon: Icons.notifications,
               title: 'Notifications',
-              subtitle: 'Activées',
-              onTap: () {},
+              subtitle: settings.notifications ? 'Activées' : 'Désactivées',
+              onTap: () =>
+                  ref.read(settingsProvider.notifier).toggleNotifications(),
             ),
           ],
         ),
@@ -40,14 +46,18 @@ class SettingsScreen extends ConsumerWidget {
             _buildSettingItem(
               icon: Icons.local_gas_station,
               title: 'Carburant préféré',
-              subtitle: 'Diesel',
-              onTap: () {},
+              subtitle: settings.preferredFuel,
+              onTap: () => ref
+                  .read(settingsProvider.notifier)
+                  .updatePreferredFuel('Diesel'),
             ),
             _buildSettingItem(
               icon: Icons.euro,
               title: 'Devise',
-              subtitle: 'F CFA (XOF)',
-              onTap: () {},
+              subtitle: settings.currency,
+              onTap: () => ref
+                  .read(settingsProvider.notifier)
+                  .updateCurrency('F CFA (XOF)'),
             ),
           ],
         ),
@@ -81,8 +91,29 @@ class SettingsScreen extends ConsumerWidget {
             _buildSettingItem(
               icon: Icons.info,
               title: 'Version',
-              subtitle: '1.0.0',
-              onTap: () {},
+              subtitle: settings.version,
+              onTap: () {
+                showAboutDialog(
+                    context: context,
+                    applicationIcon: Icon(Icons.local_gas_station),
+                    applicationName: 'CarbuTrack',
+                    applicationVersion: '1.0.0',
+                    applicationLegalese: '© Mars 2025 AlfajerApps',
+                    children: [
+                      // developer par Ibrahim Ahmad contact suivants
+                      const Card(
+                          child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Text("Developpeur"),
+                              Text("Ibrahim Ahmad")
+                            ],
+                          )
+                        ],
+                      ))
+                    ]);
+              },
             ),
             _buildSettingItem(
               icon: Icons.help,
@@ -113,7 +144,8 @@ class SettingsScreen extends ConsumerWidget {
     );
   }
 
-  Widget _buildSection({required String title, required List<Widget> children}) {
+  Widget _buildSection(
+      {required String title, required List<Widget> children}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

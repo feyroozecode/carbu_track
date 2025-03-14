@@ -6,7 +6,6 @@ plugins {
     id "dev.flutter.flutter-gradle-plugin"
 }
 
-// Change 'val' to 'def'
 def keystoreProperties = new Properties()
 def keystorePropertiesFile = rootProject.file("key.properties")
 if (keystorePropertiesFile.exists()) {
@@ -34,6 +33,9 @@ android {
             storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
             storePassword keystoreProperties['storePassword']
         }
+        debug {
+            // Typically, debug builds do not require signing configurations
+        }
     }
 
     defaultConfig {
@@ -49,6 +51,10 @@ android {
             signingConfig signingConfigs.release
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            // Ensure debug build type is defined
+            signingConfig signingConfigs.debug
         }
     }
 }
