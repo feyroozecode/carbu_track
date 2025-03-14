@@ -1,9 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:latlong2/latlong.dart';
 
 import '../../domain/station.dart';
-
+import '../providers/location_provider.dart';
 
 // Provider for loading state
 final stationsLoadingProvider = StateProvider<bool>((ref) => false);
@@ -13,7 +14,7 @@ final selectedFuelTypeProvider = StateProvider<String>((ref) => 'All');
 
 // Provider for the list of stations
 final stationsProvider = StateNotifierProvider<StationsNotifier, List<Station>>((ref) {
-  return StationsNotifier();
+  return StationsNotifier();  
 });
 
 // Provider for filtered stations based on selected fuel type
@@ -27,6 +28,58 @@ final filteredStationsProvider = Provider<List<Station>>((ref) {
   
   return stations.where((station) => 
     station.fuelTypes.contains(selectedFuelType)).toList();
+});
+
+// Provider for the nearest station to user location
+final nearestStationProvider = Provider<Station?>((ref) {
+  final stations = ref.watch(filteredStationsProvider);
+  final userLocation = ref.watch(userLocationProvider);
+  
+  if (userLocation == null || stations.isEmpty) {
+    return null;
+  }
+  
+  // Calculate distance to each station and find the nearest
+  final distance = Distance();
+  Station nearestStation = stations.first;
+  double shortestDistance = distance.as(
+    LengthUnit.Kilometer,
+    userLocation,
+    LatLng(nearestStation.latitude, nearestStation.longitude)
+  );
+  
+  for (final station in stations) {
+    final stationLocation = LatLng(station.latitude, station.longitude);
+    final distanceToStation = distance.as(
+      LengthUnit.Kilometer,
+      userLocation,
+      stationLocation
+    );
+    
+    if (distanceToStation < shortestDistance) {
+      shortestDistance = distanceToStation;
+      nearestStation = station;
+    }
+  }
+  
+  return nearestStation;
+});
+
+// Provider for the distance to the nearest station
+final distanceToNearestStationProvider = Provider<double?>((ref) {
+  final nearestStation = ref.watch(nearestStationProvider);
+  final userLocation = ref.watch(userLocationProvider);
+  
+  if (nearestStation == null || userLocation == null) {
+    return null;
+  }
+  
+  final distance = Distance();
+  return distance.as(
+    LengthUnit.Kilometer,
+    userLocation,
+    LatLng(nearestStation.latitude, nearestStation.longitude)
+  );
 });
 
 class StationsNotifier extends StateNotifier<List<Station>> {

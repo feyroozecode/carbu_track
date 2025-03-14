@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../common/constants/app_colors.dart';
+import '../../favorites/presentation/favorite_screen.dart';
 import 'widgets/map_screen.dart';
 import '../../settings/settings_screen.dart';
 
@@ -17,14 +18,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   bool isFullScreen = false;
 
   late List<Widget> screens;
-  
+
   @override
   void initState() {
     super.initState();
     screens = [
       //const HomeWidget(),
       const MapScreen(),
-      //const ProfileScreen(),
+      const FavoriteScreen(),
       const SettingsScreen(),
     ];
   }
@@ -32,15 +33,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   List<BottomNavigationBarItem> items = const <BottomNavigationBarItem>[
     //BottomNavigationBarItem(label: "Accueil", icon: Icon(Icons.home)),
     BottomNavigationBarItem(label: "Carte", icon: Icon(Icons.map)),
-    //BottomNavigationBarItem(label: "Profil", icon: Icon(Icons.person)),
+    BottomNavigationBarItem(label: "Favoris", icon: Icon(Icons.favorite)),
     BottomNavigationBarItem(label: "Plus", icon: Icon(Icons.settings)),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: isFullScreen && selectedTab == 1 
-          ? null 
+      appBar: isFullScreen && selectedTab == 0
+          ? null
           : AppBar(
               title: const Text('CarbuTrack',
                   style: TextStyle(
@@ -49,26 +50,62 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     color: AppColors.primary,
                   )),
               actions: [
-                IconButton(
-                  icon: const Icon(Icons.notifications),
-                  onPressed: () {
-                    // Handle notification button press
-                  },
-                ),
-                if (selectedTab == 1) // Only show fullscreen toggle for map
+                if (selectedTab == 0) // Show fullscreen toggle only for map
                   IconButton(
-                    icon: Icon(isFullScreen ? Icons.fullscreen_exit : Icons.fullscreen),
+                    icon: Icon(isFullScreen
+                        ? Icons.fullscreen_exit
+                        : Icons.fullscreen),
                     onPressed: () {
                       setState(() {
                         isFullScreen = !isFullScreen;
                       });
                     },
                   ),
+                Stack(
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.notifications),
+                      onPressed: () {
+                        // Handle notification button press
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                            content: Text('Notifications coming soon!'),
+                            duration: Duration(seconds: 2),
+                          ),
+                        );
+                      },
+                    ),
+                    Positioned(
+                      right: 8,
+                      top: 8,
+                      child: Container(
+                        padding: const EdgeInsets.all(2),
+                        decoration: BoxDecoration(
+                          color: Colors.red,
+                          borderRadius: BorderRadius.circular(6),
+                        ),
+                        constraints: const BoxConstraints(
+                          minWidth: 12,
+                          minHeight: 12,
+                        ),
+                        child: const Text(
+                          '2',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 8,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
       backgroundColor: AppColors.background,
       body: screens[selectedTab],
-      bottomNavigationBar: isFullScreen && selectedTab == 1
+      bottomNavigationBar: isFullScreen && selectedTab == 0
           ? null
           : BottomNavigationBar(
               elevation: 10,
@@ -85,27 +122,30 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
               onTap: (int index) {
                 setState(() {
                   selectedTab = index;
-                  // Exit fullscreen mode when switching tabs
-                  if (isFullScreen && index != 1) {
+                  // Exit fullscreen mode when switching to non-map tab
+                  if (isFullScreen && index != 0) {
                     isFullScreen = false;
                   }
                 });
               },
               items: items,
             ),
-      floatingActionButton: isFullScreen && selectedTab == 1
-          ? FloatingActionButton(
-              mini: true,
-              backgroundColor: Colors.white,
-              child: Icon(
-                Icons.fullscreen_exit,
-                color: AppColors.primary,
+      floatingActionButton: isFullScreen && selectedTab == 0
+          ? Padding(
+              padding: const EdgeInsets.only(bottom: 64.0),
+              child: FloatingActionButton(
+                mini: true,
+                backgroundColor: Colors.white,
+                child: const Icon(
+                  Icons.fullscreen_exit,
+                  color: AppColors.primary,
+                ),
+                onPressed: () {
+                  setState(() {
+                    isFullScreen = false;
+                  });
+                },
               ),
-              onPressed: () {
-                setState(() {
-                  isFullScreen = false;
-                });
-              },
             )
           : null,
     );

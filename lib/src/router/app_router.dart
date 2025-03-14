@@ -2,7 +2,7 @@ import 'package:go_router/go_router.dart';
 
 import '../features/auth/signin/presentation/sigin_screen.dart';
 import '../features/home/core/presentation/home_screen.dart';
-import '../features/home/on_boarding/splash/presentaiton/splash_screen.dart';
+import '../features/splash/presentation/splash_screen.dart';
 
 enum AppRoutes {
   initial(
@@ -58,6 +58,6 @@ List<RouteBase> routes = [
 ];
 
 final appRouter = GoRouter(
-  initialLocation: '/', // Define initial route to start with splash screen
+  initialLocation: '/splash', // Define initial route to start with splash screen
   routes: routes
 );
