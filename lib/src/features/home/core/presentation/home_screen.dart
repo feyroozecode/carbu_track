@@ -26,7 +26,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       //const HomeWidget(),
       const MapScreen(),
       const FavoriteScreen(),
-      const SettingsScreen(),
+      Scaffold(
+        appBar: AppBar(
+          title: Text("Notifications"),
+        ),
+      ),
+      SettingsScreen(),
     ];
   }
 

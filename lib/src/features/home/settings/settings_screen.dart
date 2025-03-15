@@ -1,11 +1,13 @@
+import 'package:carbu_track/src/features/auth/infrastructure/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../common/constants/app_colors.dart';
 import 'providers/setting_provider.dart';
 
 class SettingsScreen extends ConsumerWidget {
-  const SettingsScreen({super.key});
+  SettingsScreen({super.key});
 
+  final authServoce = AuthService();
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final settings = ref.watch(settingsProvider);
@@ -80,7 +82,9 @@ class SettingsScreen extends ConsumerWidget {
               icon: Icons.logout,
               title: 'Déconnexion',
               subtitle: '',
-              onTap: () {},
+              onTap: () {
+                authServoce.signOut();
+              },
               textColor: Colors.red,
             ),
           ],
