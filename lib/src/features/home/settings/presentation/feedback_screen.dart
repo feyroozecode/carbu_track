@@ -22,7 +22,7 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
   Future<void> _sendEmail() async {
     if (_formKey.currentState!.validate()) {
       final emailUrl = Uri.parse(
-          'mailto:${_emailController.text}?subject=Feedback&body=${_messageController.text}');
+          'mailto:${_emailController.text}?subject=FeedbackCarbuTrack&body=${_messageController.text}');
       if (await canLaunchUrl(emailUrl)) {
         await launchUrl(emailUrl);
       } else {
