@@ -20,18 +20,25 @@ class ProfileScreen extends StatelessWidget {
             CircleAvatar(
                 backgroundColor: AppColors.primary,
                 radius: 50,
-                child: Text(_authService.getCurrentEmail())),
+                child: Text(
+                  _authService.getCurrentEmail()[0].toUpperCase(),
+                  style: TextStyle(
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                )),
             const SizedBox(height: 20),
-            const Text(
-              'John Doe',
+            Text(
+              _authService.getCurrentEmail(),
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 10),
-            const Text(
-              'john.doe@example.com',
+            Text(
+              _authService.getCurrentEmail(),
               style: TextStyle(
                 fontSize: 16,
                 color: Colors.grey,

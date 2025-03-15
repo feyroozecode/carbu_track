@@ -16,7 +16,7 @@ class SettingsState {
 
   SettingsState({
     this.language = 'fr',
-    this.theme = 'dark',
+    this.theme = 'light',
     this.notifications = true,
     this.preferredFuel = 'Diesel',
     this.currency = 'F CFA (XOF)',
@@ -48,6 +48,9 @@ class SettingsNotifier extends StateNotifier<SettingsState> {
   void updateLanguage(String language) =>
       state = state.copyWith(language: language);
   void updateTheme(String theme) => state = state.copyWith(theme: theme);
+  // GET THEME BOOL isDarkMode
+  bool get isDarkMode => state.theme == 'dark';
+  
   void toggleNotifications() =>
       state = state.copyWith(notifications: !state.notifications);
   void updatePreferredFuel(String fuel) =>

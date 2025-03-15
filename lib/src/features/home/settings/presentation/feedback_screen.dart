@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../../auth/infrastructure/auth_service.dart';
 
 class FeedbackScreen extends StatefulWidget {
   const FeedbackScreen({Key? key}) : super(key: key);
@@ -9,6 +12,8 @@ class FeedbackScreen extends StatefulWidget {
 }
 
 class _FeedbackScreenState extends State<FeedbackScreen> {
+  final _authService = AuthService();
+
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
   final _emailController = TextEditingController();
@@ -16,21 +21,12 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
 
   Future<void> _sendEmail() async {
     if (_formKey.currentState!.validate()) {
-      final Uri emailLaunchUri = Uri(
-        scheme: 'mailto',
-        path: 'feyroozecode@gmail.com',
-        queryParameters: {
-          'subject': 'Feedback from ${_nameController.text}',
-          'body': _messageController.text,
-        },
-      );
-
-      if (await canLaunchUrl(emailLaunchUri)) {
-        await launchUrl(emailLaunchUri);
+      final emailUrl = Uri.parse(
+          'mailto:${_emailController.text}?subject=Feedback&body=${_messageController.text}');
+      if (await canLaunchUrl(emailUrl)) {
+        await launchUrl(emailUrl);
       } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('Could not launch email client')),
-        );
+        throw 'Impossible d\'ouvrir l\'application de messagerie';
       }
     }
   }

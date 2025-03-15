@@ -68,9 +68,11 @@ class SettingsScreen extends ConsumerWidget {
             _buildSettingItem(
               icon: Icons.dark_mode,
               title: 'Thème',
-              subtitle: settings.theme,
-              onTap: () =>
-                  ref.read(settingsProvider.notifier).updateTheme('Sombre'),
+              subtitle: settings.theme == 'light' ? 'Clair' : 'Sombre',
+              onTap: () => ref.read(settingsProvider.notifier).updateTheme(
+                  ref.read(settingsProvider.notifier).isDarkMode
+                      ? 'light'
+                      : 'dark'),
             ),
             // _buildSettingItem(
             //   icon: Icons.notifications,
@@ -122,7 +124,7 @@ class SettingsScreen extends ConsumerWidget {
             // detail of developer
             _buildSettingItem(
               icon: Icons.info,
-              title: 'Développeur',
+              title: 'À propos du Développeur',
               subtitle: settings.version,
               onTap: () {
                 showAboutDialog(

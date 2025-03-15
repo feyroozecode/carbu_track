@@ -13,12 +13,12 @@ class MyApp extends ConsumerWidget {
     return MaterialApp.router(
         debugShowCheckedModeBanner: false,
         title: 'carbuTracker',
-        theme: ref.watch(settingsProvider).theme == 'dark'
-            ? ThemeData.dark().copyWith()
-            : ThemeData(
+        theme: ref.watch(settingsProvider).theme == 'light'
+            ? ThemeData(
                 colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),
                 useMaterial3: true,
-              ),
+              )
+            : ThemeData.dark().copyWith(),
         routerConfig: appRouter);
   }
 }
