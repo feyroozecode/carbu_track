@@ -1,6 +1,12 @@
+import 'package:carbu_track/src/common/constants/app_size.dart';
 import 'package:carbu_track/src/features/auth/infrastructure/auth_service.dart';
+import 'package:carbu_track/src/features/splash/presentation/splash_screen.dart';
+import 'package:carbu_track/src/router/app_router.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../../common/constants/app_colors.dart';
 import 'providers/setting_provider.dart';
 
@@ -18,6 +24,28 @@ class SettingsScreen extends ConsumerWidget {
         _buildSection(
           title: 'Préférences',
           children: [
+            authServoce.getSession() != null
+                ? _buildProfileItem(
+                    icon: Icons.person,
+                    userName: authServoce.getCurrentEmail(),
+                    subtitle: authServoce.getCurrentEmail(),
+                    onTap: () {})
+                : Padding(
+                    padding: EdgeInsets.all(16),
+                    child: Column(
+                      children: [
+                        Text(
+                          "Utilsateur Invité, veillez vous connecter pour accéder à vos données",
+                          style: TextStyle(color: Colors.red),
+                        ),
+                        gapH16,
+                        ElevatedButton(
+                            onPressed: () {
+                              context.pushReplacement(AppRoutes.gate.path);
+                            },
+                            child: Text("Se connecter"))
+                      ],
+                    )),
             _buildSettingItem(
               icon: Icons.language,
               title: 'Langue',
@@ -33,36 +61,36 @@ class SettingsScreen extends ConsumerWidget {
               onTap: () =>
                   ref.read(settingsProvider.notifier).updateTheme('Sombre'),
             ),
-            _buildSettingItem(
-              icon: Icons.notifications,
-              title: 'Notifications',
-              subtitle: settings.notifications ? 'Activées' : 'Désactivées',
-              onTap: () =>
-                  ref.read(settingsProvider.notifier).toggleNotifications(),
-            ),
+            // _buildSettingItem(
+            //   icon: Icons.notifications,
+            //   title: 'Notifications',
+            //   subtitle: settings.notifications ? 'Activées' : 'Désactivées',
+            //   onTap: () =>
+            //       ref.read(settingsProvider.notifier).toggleNotifications(),
+            // ),
           ],
         ),
-        _buildSection(
-          title: 'Carburant',
-          children: [
-            _buildSettingItem(
-              icon: Icons.local_gas_station,
-              title: 'Carburant préféré',
-              subtitle: settings.preferredFuel,
-              onTap: () => ref
-                  .read(settingsProvider.notifier)
-                  .updatePreferredFuel('Diesel'),
-            ),
-            _buildSettingItem(
-              icon: Icons.euro,
-              title: 'Devise',
-              subtitle: settings.currency,
-              onTap: () => ref
-                  .read(settingsProvider.notifier)
-                  .updateCurrency('F CFA (XOF)'),
-            ),
-          ],
-        ),
+        // _buildSection(
+        //   title: 'Carburant',
+        //   children: [
+        //     _buildSettingItem(
+        //       icon: Icons.local_gas_station,
+        //       title: 'Carburant préféré',
+        //       subtitle: settings.preferredFuel,
+        //       onTap: () => ref
+        //           .read(settingsProvider.notifier)
+        //           .updatePreferredFuel('Diesel'),
+        //     ),
+        //     _buildSettingItem(
+        //       icon: Icons.euro,
+        //       title: 'Devise',
+        //       subtitle: settings.currency,
+        //       onTap: () => ref
+        //           .read(settingsProvider.notifier)
+        //           .updateCurrency('F CFA (XOF)'),
+        //     ),
+        //   ],
+        // ),
         _buildSection(
           title: 'Compte',
           children: [
@@ -92,9 +120,10 @@ class SettingsScreen extends ConsumerWidget {
         _buildSection(
           title: 'À propos',
           children: [
+            // detail of developer
             _buildSettingItem(
               icon: Icons.info,
-              title: 'Version',
+              title: 'Développeur',
               subtitle: settings.version,
               onTap: () {
                 showAboutDialog(
@@ -105,17 +134,44 @@ class SettingsScreen extends ConsumerWidget {
                     applicationLegalese: '© Mars 2025 AlfajerApps',
                     children: [
                       // developer par Ibrahim Ahmad contact suivants
-                      const Card(
-                          child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Text("Developpeur"),
-                              Text("Ibrahim Ahmad")
-                            ],
-                          )
-                        ],
-                      ))
+                      SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.2,
+                          child: Card(
+                              margin: EdgeInsets.all(16),
+                              child: Column(
+                                children: [
+                                  Text("Par"),
+                                  gapH12,
+                                  Text("Ibrahim Ahmad"),
+                                  gapH20,
+                                  RichText(
+                                    text: TextSpan(
+                                      text:
+                                          'Clique ici Whatsapp (+227 99463594) ',
+                                      style: TextStyle(color: Colors.green),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          // do something
+                                          launchUrl(Uri.parse(
+                                              'https://wa.me/+22799463594?text=Bonjour jai installer carbuTrack'));
+                                        },
+                                    ),
+                                  ),
+                                  gapH16,
+                                  RichText(
+                                    text: TextSpan(
+                                      text: 'Contact Linkedin ',
+                                      style: TextStyle(color: Colors.blue),
+                                      recognizer: TapGestureRecognizer()
+                                        ..onTap = () {
+                                          // do something
+                                          launchUrl(Uri.parse(
+                                              'https://www.linkedin.com/in/feyroozcode/'));
+                                        },
+                                    ),
+                                  )
+                                ],
+                              )))
                     ]);
               },
             ),
@@ -167,6 +223,35 @@ class SettingsScreen extends ConsumerWidget {
         ...children,
         const SizedBox(height: 16),
       ],
+    );
+  }
+
+  // build Profile Item
+  Widget _buildProfileItem({
+    required IconData icon,
+    required String userName,
+    required String subtitle,
+    required VoidCallback onTap,
+    Color? textColor,
+  }) {
+    return ListTile(
+      leading: Icon(
+        icon,
+        color: AppColors.primary,
+      ),
+      title: Text(
+        userName,
+        style: TextStyle(
+          fontWeight: FontWeight.w500,
+          color: textColor,
+        ),
+      ),
+      subtitle: subtitle.isNotEmpty ? Text(subtitle) : null,
+      trailing: const Icon(
+        Icons.chevron_right,
+        color: Colors.grey,
+      ),
+      onTap: onTap,
     );
   }
 

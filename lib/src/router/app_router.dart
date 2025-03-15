@@ -61,5 +61,5 @@ List<RouteBase> routes = [
 
 final appRouter = GoRouter(
     initialLocation:
-        '/gate', // Define initial route to start with splash screen
+        '/splash', // Define initial route to start with splash screen
     routes: routes);

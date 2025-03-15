@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:carbu_track/src/exceptions/error_logger.dart';
 import 'package:carbu_track/src/localization/string_hardcoded.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../common/constants/app_spacing.dart';
 
@@ -48,8 +49,16 @@ void registerErrorHandlers(ErrorLogger errorLogger) {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       OutlinedButton(
-                          onPressed: () {},
-                          child: const Text("Click to report the error ")),
+                          onPressed: () {
+                            String email = "feyroozecode@gmail.com";
+                            // send email to feyroozecode
+                            launchUrl(Uri.parse(
+                                'mailto:$email?subject=Erreur de l\ application, CarbuTrack &body=${details.toString()}'));
+                            Navigator.pushNamedAndRemoveUntil(
+                                ctx, '/', (_) => false);
+                          },
+                          child: const Text(
+                              "Cliquer ici pour signaler l'erreur  ")),
                       ElevatedButton(
                           onPressed: () {
                             showDialog(
@@ -62,10 +71,13 @@ void registerErrorHandlers(ErrorLogger errorLogger) {
                                     ],
                                   );
                                 });
-                            Future.delayed(
-                                const Duration(seconds: 3), () => exit(0));
+                            Future.delayed(const Duration(seconds: 3), () {
+                              // restart the app here
+                              Navigator.pushNamedAndRemoveUntil(
+                                  ctx, '/', (_) => false);
+                            });
                           },
-                          child: const Text("Restart the App"))
+                          child: const Text("Relancer"))
                     ],
                   )
                 ],

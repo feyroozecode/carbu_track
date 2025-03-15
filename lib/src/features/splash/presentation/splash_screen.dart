@@ -11,7 +11,6 @@ import '../../home/core/presentation/providers/location_provider.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:go_router/go_router.dart';
 
-
 class SplashScreen extends ConsumerStatefulWidget {
   const SplashScreen({super.key});
 
@@ -19,23 +18,24 @@ class SplashScreen extends ConsumerStatefulWidget {
   ConsumerState<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerProviderStateMixin {
+class _SplashScreenState extends ConsumerState<SplashScreen>
+    with SingleTickerProviderStateMixin {
   late AnimationController _animationController;
   late Animation<double> _rotationAnimation;
   late Animation<double> _radiusAnimation;
   late Animation<double> _opacityAnimation;
   late Animation<double> _scaleAnimation;
-  
+
   @override
   void initState() {
     super.initState();
-    
+
     // Initialize animations
     _animationController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 4),
     );
-    
+
     _rotationAnimation = Tween<double>(
       begin: 0.0,
       end: 2.0,
@@ -43,7 +43,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
       parent: _animationController,
       curve: Curves.easeInOutCubic,
     ));
-    
+
     _radiusAnimation = Tween<double>(
       begin: 0.0,
       end: 1.0,
@@ -51,7 +51,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
       parent: _animationController,
       curve: Curves.easeOut,
     ));
-    
+
     _opacityAnimation = Tween<double>(
       begin: 0.0,
       end: 1.0,
@@ -59,7 +59,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
       parent: _animationController,
       curve: const Interval(0.0, 0.5, curve: Curves.easeIn),
     ));
-    
+
     _scaleAnimation = Tween<double>(
       begin: 0.5,
       end: 1.0,
@@ -67,21 +67,22 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
       parent: _animationController,
       curve: Curves.elasticOut,
     ));
-    
+
     // Start animation
     _animationController.forward();
-    
+
     // Request location permission
     //_requestLocationPermission();
-    
+
     // Navigate to home screen after 5 seconds
     Timer(const Duration(seconds: 5), () {
       // GOROUTER page replacement to home screen
-      context.pushReplacement(AppRoutes.home.path, );
+      context.pushReplacement(
+        AppRoutes.gate.path,
+      );
     });
   }
-  
-  
+
   @override
   void dispose() {
     _animationController.dispose();
@@ -119,9 +120,9 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
                     ),
                   ),
                 ),
-                
+
                 const SizedBox(height: 24),
-                
+
                 // App name with fade in animation
                 Opacity(
                   opacity: _opacityAnimation.value,
@@ -134,9 +135,9 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
                     ),
                   ),
                 ),
-                
+
                 const SizedBox(height: 8),
-                
+
                 // Tagline with fade in animation
                 Opacity(
                   opacity: _opacityAnimation.value,
@@ -148,9 +149,9 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
                     ),
                   ),
                 ),
-                
+
                 const SizedBox(height: 48),
-                
+
                 // Circular loading animation
                 Stack(
                   alignment: Alignment.center,
@@ -178,7 +179,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerPr
                         ),
                       ),
                     ),
-                    
+
                     // Inner circle with pulsing animation
                     Container(
                       width: 50 * _radiusAnimation.value,

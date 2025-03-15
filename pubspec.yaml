@@ -60,6 +60,7 @@ dependencies:
   flutter_map: ^7.0.2
   flutter_map_marker_cluster: ^1.4.0
   map_launcher: ^3.5.0
+  maps_launcher: ^3.0.0+1
 
 dev_dependencies:
   flutter_test:

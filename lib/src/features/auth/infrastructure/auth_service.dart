@@ -22,6 +22,7 @@ class AuthService {
       password: password,
     );
     if (response.session == null) {
+      
       throw Exception(response);
     }
     return response;
@@ -40,5 +41,15 @@ class AuthService {
     return user?.email ?? '';
   }
 
-  // get user 
+  // get user name 
+  String getUserName() {
+    final session = _supabaseClient.auth.currentSession;
+    final user = session?.user;
+    return user?.userMetadata!['full_name']?? '';
+  }
+
+// get session 
+  Session? getSession() {
+    return _supabaseClient.auth.currentSession;
+  }
 }

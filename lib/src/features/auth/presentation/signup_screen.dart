@@ -39,22 +39,19 @@ class _SignupScreenState extends State<SignupScreen> {
         ),
       );
     }
-    if (email.isEmpty || code.isEmpty) {
+    if (email.isNotEmpty || code.isNotEmpty) {
       try {
-        await authService.signUpWithEmailAndPassword(email, code);
+        await authService.signUpWithEmailAndPassword(email, code).then(
+          (value) {
+            Navigator.pop(context);
+          },
+        );
+        // show dialogCicularProgress
       } catch (e) {
-        ScaffoldMessenger.of(context).showMaterialBanner(
-          MaterialBanner(
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
             content:
                 Text("Une erreur s'est produite ${e.toString()}".hardcoded),
-            actions: [
-              TextButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text('OK'.hardcoded),
-              ),
-            ],
           ),
         );
         // showErrorDialog(context, e.toString());
@@ -88,63 +85,63 @@ class _SignupScreenState extends State<SignupScreen> {
       appBar: AppBar(
         title: Text('Creation de compte '.hardcoded),
       ),
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(20.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Connexion'.hardcoded,
-                style: const TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Creation de conpte '.hardcoded,
+              style: const TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
-              const SizedBox(height: 40),
-              TextField(
-                controller: _emailController,
-                keyboardType: TextInputType.phone,
-                decoration: InputDecoration(
-                  labelText: 'Email'.hardcoded,
-                  border: const OutlineInputBorder(),
-                ),
+            ),
+            const SizedBox(height: 20),
+            TextField(
+              controller: _emailController,
+              keyboardType: TextInputType.emailAddress,
+              decoration: InputDecoration(
+                labelText: 'Email'.hardcoded,
+                border: const OutlineInputBorder(),
               ),
-              const SizedBox(height: 20),
-              TextField(
-                controller: _passwordController,
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  labelText: 'Mot de passe'.hardcoded,
-                  border: const OutlineInputBorder(),
-                ),
+            ),
+            const SizedBox(height: 15),
+            TextField(
+              controller: _passwordController,
+              keyboardType: TextInputType.visiblePassword,
+              obscureText: true,
+              decoration: InputDecoration(
+                labelText: 'Mot de passe'.hardcoded,
+                border: const OutlineInputBorder(),
               ),
-              const SizedBox(height: 20),
-              TextField(
-                controller: _confirmPasswordController,
-                keyboardType: TextInputType.number,
-                decoration: InputDecoration(
-                  labelText: 'Confirmation de mot de passe'.hardcoded,
-                  border: const OutlineInputBorder(),
-                ),
+            ),
+            const SizedBox(height: 15),
+            TextField(
+              controller: _confirmPasswordController,
+              keyboardType: TextInputType.visiblePassword,
+              obscureText: true,
+              decoration: InputDecoration(
+                labelText: 'Confirmation de mot de passe'.hardcoded,
+                border: const OutlineInputBorder(),
               ),
-              const SizedBox(height: 30),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                child: Text('Se connecter'.hardcoded),
-                style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(double.infinity, 50),
-                ),
+            ),
+            const SizedBox(height: 30),
+            ElevatedButton(
+              onPressed: signUp,
+              child: Text('Creer un compte '.hardcoded),
+              style: ElevatedButton.styleFrom(
+                minimumSize: const Size(double.infinity, 50),
               ),
-              const SizedBox(height: 20),
-              TextButton(
-                onPressed: signUp,
-                child: Text("Pas encore de compte ? S'inscrire".hardcoded),
-              ),
-            ],
-          ),
+            ),
+            const SizedBox(height: 20),
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text("J'ai un  compte ? Se connecter".hardcoded),
+            ),
+          ],
         ),
       ),
     );

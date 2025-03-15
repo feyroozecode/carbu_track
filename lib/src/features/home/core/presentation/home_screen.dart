@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../common/constants/app_colors.dart';
 import '../../favorites/presentation/favorite_screen.dart';
 import 'widgets/map_screen.dart';
 import '../../settings/settings_screen.dart';
+import 'widgets/notification_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -26,11 +28,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       //const HomeWidget(),
       const MapScreen(),
       const FavoriteScreen(),
-      Scaffold(
-        appBar: AppBar(
-          title: Text("Notifications"),
-        ),
-      ),
+      const NotificationScreen(),
       SettingsScreen(),
     ];
   }
@@ -39,8 +37,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   List<BottomNavigationBarItem> items = <BottomNavigationBarItem>[
     //BottomNavigationBarItem(label: "Accueil", icon: Icon(Icons.home)),
-    BottomNavigationBarItem(label: "Carte", icon: Icon(Icons.map)),
-    BottomNavigationBarItem(label: "Favoris", icon: Icon(Icons.favorite)),
+    const BottomNavigationBarItem(label: "Carte", icon: Icon(Icons.map)),
+    const BottomNavigationBarItem(label: "Favoris", icon: Icon(Icons.favorite)),
     BottomNavigationBarItem(
       label: "Notifis",
       icon: Stack(
@@ -106,6 +104,63 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                     setState(() {
                       isFullScreen = !isFullScreen;
                     });
+                  },
+                ),
+                // Add contribute button
+                IconButton(
+                  icon: Icon(Icons.volunteer_activism),
+                  tooltip: 'Contribuer',
+                  onPressed: () {
+                    // Show contribute dialog or navigate to contribute screen
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: Text('Contribuer à CarbuTrack'),
+                          content: Text(
+                              'Vous pouvez supporter le projet en contribuant à son développement.'),
+                          actions: [
+                            TextButton(
+                              child: Text('Cancel'),
+                              onPressed: () => Navigator.pop(context),
+                            ),
+                            TextButton(
+                              child: Text('Contribuer '),
+                              onPressed: () {
+                                // Implement contribution logic here
+                                // make an dialog to show how you can help the project by giving a donation ou en aident a a jotuter des staitions etc.. envoi via STA(Envoi d'argent, Transfert d'argent, etc.)
+                                showDialog(
+                                    context: context,
+                                    builder: (context) {
+                                      return AlertDialog(
+                                        title: const Text(
+                                            'Contribuer à CarbuTrack'),
+                                        content: Text(
+                                            'Vous pouvez supporter le projet en contribuant à son développement.'),
+                                        actions: [
+                                          TextButton(
+                                            child: Text('Annuler'),
+                                            onPressed: () =>
+                                                Navigator.pop(context),
+                                          ),
+                                          TextButton(
+                                            child:
+                                                Text('Cliquer ici Contribuer '),
+                                            onPressed: () async {
+                                              await launchUrl(Uri.parse(
+                                                  'https://wa.me/+22799463594?text=BonjourjaiinstallercarbuTrack,_je_vais_aidez_le_projet '));
+                                            },
+                                          ),
+                                        ],
+                                      );
+                                    });
+                                Navigator.pop(context);
+                              },
+                            ),
+                          ],
+                        );
+                      },
+                    );
                   },
                 ),
               ],

@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:map_launcher/map_launcher.dart';
+import 'package:maps_launcher/maps_launcher.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 import '../../../../../common/constants/app_colors.dart';
@@ -31,9 +32,6 @@ class _MapScreenState extends ConsumerState<MapScreen>
   late Animation<double> _routeAnimation;
 
   // Loading state trackers for different features
-  bool _isMapLoading = true;
-  bool _isStationsLoading = true;
-  bool _isLocationLoading = true;
   bool _isRouteCalculating = false;
 
   // Animation controllers for smooth transitions
@@ -54,22 +52,21 @@ class _MapScreenState extends ConsumerState<MapScreen>
   @override
   void initState() {
     super.initState();
-
     // Initialize animation controllers for smooth loading transitions
     _mapFadeController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 800),
-    );
+    )..forward(); // Immediately forward the animation to show the map
 
     _stationsFadeController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 600),
-    );
+    )..forward(); // Immediately forward the animation to show stations
 
     _locationFadeController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 500),
-    );
+    )..forward(); // Immediately forward the animation to show location
 
     // Initialize route animation controller
     _routeAnimationController = AnimationController(
@@ -81,35 +78,30 @@ class _MapScreenState extends ConsumerState<MapScreen>
         CurvedAnimation(
             parent: _routeAnimationController, curve: Curves.easeInOut));
 
-    // Start the loading sequence
-    //_startLoadingSequence();
+    // Request location permission directly
+    _requestLocationPermission();
+
+    // Load stations data directly
+    ref.read(stationsProvider.notifier).loadStations();
   }
 
   void _startLoadingSequence() async {
     // Step 1: Load the map
-    Future.delayed(const Duration(milliseconds: 300), () {
-      setState(() {
-        _isMapLoading = false;
-      });
-      _mapFadeController.forward();
 
-      // Step 2: Request location permission after map is loaded
-      _requestLocationPermission();
-    });
+    _mapFadeController.forward();
+
+    // Step 2: Request location permission after map is loaded
+    _requestLocationPermission();
 
     // Step 3: Load stations data
     ref.read(stationsLoadingProvider.notifier).state = true;
     ref.read(stationsProvider.notifier).loadStations().then((_) {
-      setState(() {
-        _isStationsLoading = false;
-      });
       ref.read(stationsLoadingProvider.notifier).state = false;
       _stationsFadeController.forward();
 
       // Step 4: Show nearest station if location is already available
-      if (!_isLocationLoading) {
-        _showNearestStation();
-      }
+
+      _showNearestStation();
     });
   }
 
@@ -175,10 +167,6 @@ class _MapScreenState extends ConsumerState<MapScreen>
           ),
         );
       }
-
-      setState(() {
-        _isLocationLoading = false;
-      });
     }
   }
 
@@ -194,20 +182,13 @@ class _MapScreenState extends ConsumerState<MapScreen>
       // Center map on user location
       _mapController.move(location, 15.0);
 
-      setState(() {
-        _isLocationLoading = false;
-      });
       _locationFadeController.forward();
 
       // Check for nearest station if stations are already loaded
-      if (!_isStationsLoading) {
-        _showNearestStation();
-      }
+
+      _showNearestStation();
     } catch (e) {
       debugPrint('Error getting location: $e');
-      setState(() {
-        _isLocationLoading = false;
-      });
     }
   }
 
@@ -218,13 +199,15 @@ class _MapScreenState extends ConsumerState<MapScreen>
   }
 
   Future<void> _openMaps(double lat, double lng) async {
-    await MapLauncher.showMarker(
-      mapType: MapType.google,
-      coords: Coords(lat, lng),
-      title: ref.watch(nearestStationProvider)!.name,
-      description: ref.watch(nearestStationProvider)!.name +
-          ref.watch(nearestStationProvider)!.brand!,
-    );
+    MapsLauncher.launchCoordinates(lat, lng);
+
+    // await MapLauncher.showMarker(
+    //   mapType: MapType.google,
+    //   coords: Coords(lat, lng),
+    //   title: ref.watch(nearestStationProvider)!.name,
+    //   description: ref.watch(nearestStationProvider)!.name +
+    //       ref.watch(nearestStationProvider)!.brand!,
+    // );
   }
 
   void _showStationDetails(Station station) {
@@ -362,7 +345,7 @@ class _MapScreenState extends ConsumerState<MapScreen>
                       station.longitude,
                     ),
                     icon: const Icon(Icons.directions),
-                    label: const Text('Get Directions'),
+                    label: const Text('Aller à la station'),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: AppColors.primary,
                       foregroundColor: Colors.white,
@@ -821,6 +804,37 @@ class _MapScreenState extends ConsumerState<MapScreen>
           //     ),
           //   ),
 
+          Positioned(
+            top: MediaQuery.of(context).padding.top + 70,
+            right: 32,
+            child: Card(
+              elevation: 4,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Icon(
+                      Icons.location_city,
+                      color: AppColors.primary,
+                    ),
+                    const SizedBox(width: 8),
+                    const Text(
+                      'Niamey',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
           // Fuel type filter
           Positioned(
             top: MediaQuery.of(context).padding.top + 10,
@@ -920,14 +934,14 @@ class _MapScreenState extends ConsumerState<MapScreen>
             ),
           ),
 
-          // Loading indicator
-          if (isLoading)
-            Container(
-              color: Colors.black26,
-              child: const Center(
-                child: CircularProgressIndicator(),
-              ),
-            ),
+          // // Loading indicator
+          // if (isLoading)
+          //   Container(
+          //     color: Colors.black26,
+          //     child: const Center(
+          //       child: CircularProgressIndicator(),
+          //     ),
+          //   ),
 
           // Nearest station bottom sheet
           if (_showNearestStationSheet &&

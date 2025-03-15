@@ -725,6 +725,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.5.0"
+  maps_launcher:
+    dependency: "direct main"
+    description:
+      name: maps_launcher
+      sha256: dac4c609720211fa6336b5903d917fe45e545c6b5665978efc3db2a3f436b1ae
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.0+1"
   matcher:
     dependency: transitive
     description:
