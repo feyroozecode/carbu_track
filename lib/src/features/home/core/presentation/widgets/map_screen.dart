@@ -41,12 +41,12 @@ class _MapScreenState extends ConsumerState<MapScreen>
 
   final List<String> _fuelTypes = [
     'Tout',
-    'SP95',
-    'SP98',
-    'Gazole',
-    'E10',
-    'E85',
-    'GPL'
+    // 'SP95',
+    // 'SP98',
+    // 'Gazole',
+    // 'E10',
+    // 'E85',
+    // 'GPL'
   ];
 
   @override
@@ -154,14 +154,14 @@ class _MapScreenState extends ConsumerState<MapScreen>
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context),
-                child: const Text('Cancel'),
+                child: const Text('Annuler'),
               ),
               TextButton(
                 onPressed: () {
                   Navigator.pop(context);
                   openAppSettings();
                 },
-                child: const Text('Open Settings'),
+                child: const Text('Ouvrir les paramètres'),
               ),
             ],
           ),
@@ -836,45 +836,45 @@ class _MapScreenState extends ConsumerState<MapScreen>
             ),
           ),
           // Fuel type filter
-          Positioned(
-            top: MediaQuery.of(context).padding.top + 10,
-            left: 0,
-            right: 0,
-            child: Container(
-              height: 50,
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: _fuelTypes.length,
-                itemBuilder: (context, index) {
-                  final fuelType = _fuelTypes[index];
-                  final isSelected =
-                      selectedFuelType == (index == 0 ? 'All' : fuelType);
+          // Positioned(
+          //   top: MediaQuery.of(context).padding.top + 10,
+          //   left: 0,
+          //   right: 0,
+          //   child: Container(
+          //     height: 50,
+          //     padding: const EdgeInsets.symmetric(horizontal: 16),
+          //     child: ListView.builder(
+          //       scrollDirection: Axis.horizontal,
+          //       itemCount: _fuelTypes.length,
+          //       itemBuilder: (context, index) {
+          //         final fuelType = _fuelTypes[index];
+          //         final isSelected =
+          //             selectedFuelType == (index == 0 ? 'All' : fuelType);
 
-                  return Padding(
-                    padding: const EdgeInsets.only(right: 8),
-                    child: ChoiceChip(
-                      label: Text(fuelType),
-                      selected: isSelected,
-                      onSelected: (selected) {
-                        if (selected) {
-                          ref.read(selectedFuelTypeProvider.notifier).state =
-                              index == 0 ? 'All' : fuelType;
-                        }
-                      },
-                      backgroundColor: Colors.white,
-                      selectedColor: AppColors.primary,
-                      labelStyle: TextStyle(
-                        color: isSelected ? Colors.white : Colors.black,
-                        fontWeight:
-                            isSelected ? FontWeight.bold : FontWeight.normal,
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
-          ),
+          //         return Padding(
+          //           padding: const EdgeInsets.only(right: 8),
+          //           child: ChoiceChip(
+          //             label: Text(fuelType),
+          //             selected: isSelected,
+          //             onSelected: (selected) {
+          //               if (selected) {
+          //                 ref.read(selectedFuelTypeProvider.notifier).state =
+          //                     index == 0 ? 'All' : fuelType;
+          //               }
+          //             },
+          //             backgroundColor: Colors.white,
+          //             selectedColor: AppColors.primary,
+          //             labelStyle: TextStyle(
+          //               color: isSelected ? Colors.white : Colors.black,
+          //               fontWeight:
+          //                   isSelected ? FontWeight.bold : FontWeight.normal,
+          //             ),
+          //           ),
+          //         );
+          //       },
+          //     ),
+          //   ),
+          // ),
 
           // Map controls
           Positioned(
@@ -954,7 +954,7 @@ class _MapScreenState extends ConsumerState<MapScreen>
               child: GestureDetector(
                 onTap: () => _showStationDetails(nearestStation),
                 child: Container(
-                  height: MediaQuery.of(context).size.height / 2.5,
+                  height: MediaQuery.of(context).size.height / 2.2,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius:
@@ -982,7 +982,7 @@ class _MapScreenState extends ConsumerState<MapScreen>
 
                       // Title
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 14),
+                        padding: const EdgeInsets.symmetric(horizontal: 12),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [

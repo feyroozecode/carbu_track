@@ -18,9 +18,18 @@ class SettingsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final settings = ref.watch(settingsProvider);
 
-    return ListView(
+    return Scaffold(
+        body: ListView(
       children: [
         const SizedBox(height: 16),
+        // feedback item
+        _buildSettingItem(
+            icon: Icons.feedback,
+            title: 'Feedback',
+            subtitle: 'Faite nous retour ',
+            onTap: () {
+              context.push(AppRoutes.feedback.path);
+            }),
         _buildSection(
           title: 'Préférences',
           children: [
@@ -29,7 +38,9 @@ class SettingsScreen extends ConsumerWidget {
                     icon: Icons.person,
                     userName: authServoce.getCurrentEmail(),
                     subtitle: authServoce.getCurrentEmail(),
-                    onTap: () {})
+                    onTap: () {
+                      context.push(AppRoutes.profile.path);
+                    })
                 : Padding(
                     padding: EdgeInsets.all(16),
                     child: Column(
@@ -46,14 +57,14 @@ class SettingsScreen extends ConsumerWidget {
                             child: Text("Se connecter"))
                       ],
                     )),
-            _buildSettingItem(
-              icon: Icons.language,
-              title: 'Langue',
-              subtitle: settings.language,
-              onTap: () => ref
-                  .read(settingsProvider.notifier)
-                  .updateLanguage('Français'),
-            ),
+            // _buildSettingItem(
+            //   icon: Icons.language,
+            //   title: 'Langue',
+            //   subtitle: settings.language,
+            //   onTap: () => ref
+            //       .read(settingsProvider.notifier)
+            //       .updateLanguage('Français'),
+            // ),
             _buildSettingItem(
               icon: Icons.dark_mode,
               title: 'Thème',
@@ -95,18 +106,6 @@ class SettingsScreen extends ConsumerWidget {
           title: 'Compte',
           children: [
             _buildSettingItem(
-              icon: Icons.person,
-              title: 'Profil',
-              subtitle: 'Modifier vos informations',
-              onTap: () {},
-            ),
-            _buildSettingItem(
-              icon: Icons.security,
-              title: 'Confidentialité',
-              subtitle: 'Gérer vos données',
-              onTap: () {},
-            ),
-            _buildSettingItem(
               icon: Icons.logout,
               title: 'Déconnexion',
               subtitle: '',
@@ -137,13 +136,13 @@ class SettingsScreen extends ConsumerWidget {
                       SizedBox(
                           height: MediaQuery.of(context).size.height * 0.2,
                           child: Card(
-                              margin: EdgeInsets.all(16),
+                              margin: EdgeInsets.all(4),
                               child: Column(
                                 children: [
                                   Text("Par"),
                                   gapH12,
                                   Text("Ibrahim Ahmad"),
-                                  gapH20,
+                                  gapH16,
                                   RichText(
                                     text: TextSpan(
                                       text:
@@ -176,6 +175,12 @@ class SettingsScreen extends ConsumerWidget {
               },
             ),
             _buildSettingItem(
+              icon: Icons.security,
+              title: 'Confidentialité',
+              subtitle: 'Gérer vos données',
+              onTap: () {},
+            ),
+            _buildSettingItem(
               icon: Icons.help,
               title: 'Aide',
               subtitle: 'FAQ et support',
@@ -201,7 +206,7 @@ class SettingsScreen extends ConsumerWidget {
         ),
         const SizedBox(height: 24),
       ],
-    );
+    ));
   }
 
   Widget _buildSection(

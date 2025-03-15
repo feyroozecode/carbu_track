@@ -1,4 +1,5 @@
 import 'package:carbu_track/src/features/home/core/presentation/home_screen.dart';
+import 'package:carbu_track/src/features/home/settings/providers/setting_provider.dart';
 import 'package:carbu_track/src/features/splash/presentation/splash_screen.dart';
 import 'package:carbu_track/src/localization/string_hardcoded.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +27,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
   void login() async {
     final email = _emailController.text;
     final code = _codeController.text;
+    if (email.isEmpty || code.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text("Veuillez remplir tous les champs".hardcoded)));
+    }
     if (!email.isEmpty || code.isEmpty) {
       try {
         await authService.signInWithEmailAndPassword(email, code);
@@ -93,10 +98,17 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
             ElevatedButton(
               onPressed: navigateToHome,
               style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
                 minimumSize: const Size(double.infinity, 50),
               ),
-              child:
-                  Text('Utiliser sans compte(Utilsiateur invité) '.hardcoded),
+              child: Text(
+                'Utiliser sans compte(Utilsiateur invité) '.hardcoded,
+                style: TextStyle(
+                  color: ref.watch(settingsProvider).theme == 'dark'
+                      ? Colors.white
+                      : Colors.black,
+                ),
+              ),
             ),
             const SizedBox(height: 20),
             Text(

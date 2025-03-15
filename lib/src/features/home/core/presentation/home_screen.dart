@@ -1,5 +1,7 @@
+import 'package:carbu_track/src/router/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../common/constants/app_colors.dart';
@@ -28,7 +30,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       //const HomeWidget(),
       const MapScreen(),
       const FavoriteScreen(),
-      const NotificationScreen(),
+      //const NotificationScreen(),
       SettingsScreen(),
     ];
   }
@@ -39,42 +41,42 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     //BottomNavigationBarItem(label: "Accueil", icon: Icon(Icons.home)),
     const BottomNavigationBarItem(label: "Carte", icon: Icon(Icons.map)),
     const BottomNavigationBarItem(label: "Favoris", icon: Icon(Icons.favorite)),
-    BottomNavigationBarItem(
-      label: "Notifis",
-      icon: Stack(
-        children: [
-          IconButton(
-            icon: const Icon(Icons.notifications),
-            onPressed: () {},
-          ),
-          Positioned(
-            right: 8,
-            top: 8,
-            child: Container(
-              padding: const EdgeInsets.all(2),
-              decoration: BoxDecoration(
-                color: Colors.red,
-                borderRadius: BorderRadius.circular(6),
-              ),
-              constraints: const BoxConstraints(
-                minWidth: 12,
-                minHeight: 12,
-              ),
-              child: const Text(
-                '2',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 8,
-                  fontWeight: FontWeight.bold,
-                ),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
-        ],
-      ),
-    ),
-    BottomNavigationBarItem(label: "Plus", icon: Icon(Icons.settings)),
+    // BottomNavigationBarItem(
+    //   label: "Notifis",
+    //   icon: Stack(
+    //     children: [
+    //       IconButton(
+    //         icon: const Icon(Icons.notifications),
+    //         onPressed: () {},
+    //       ),
+    //       Positioned(
+    //         right: 8,
+    //         top: 8,
+    //         child: Container(
+    //           padding: const EdgeInsets.all(2),
+    //           decoration: BoxDecoration(
+    //             color: Colors.red,
+    //             borderRadius: BorderRadius.circular(6),
+    //           ),
+    //           constraints: const BoxConstraints(
+    //             minWidth: 12,
+    //             minHeight: 12,
+    //           ),
+    //           child: const Text(
+    //             '2',
+    //             style: TextStyle(
+    //               color: Colors.white,
+    //               fontSize: 8,
+    //               fontWeight: FontWeight.bold,
+    //             ),
+    //             textAlign: TextAlign.center,
+    //           ),
+    //         ),
+    //       ),
+    //     ],
+    //   ),
+    // ),
+    const BottomNavigationBarItem(label: "Plus", icon: Icon(Icons.settings)),
   ];
 
   @override
@@ -121,40 +123,13 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                               'Vous pouvez supporter le projet en contribuant à son développement.'),
                           actions: [
                             TextButton(
-                              child: Text('Cancel'),
+                              child: Text('Annuler'),
                               onPressed: () => Navigator.pop(context),
                             ),
                             TextButton(
                               child: Text('Contribuer '),
                               onPressed: () {
-                                // Implement contribution logic here
-                                // make an dialog to show how you can help the project by giving a donation ou en aident a a jotuter des staitions etc.. envoi via STA(Envoi d'argent, Transfert d'argent, etc.)
-                                showDialog(
-                                    context: context,
-                                    builder: (context) {
-                                      return AlertDialog(
-                                        title: const Text(
-                                            'Contribuer à CarbuTrack'),
-                                        content: Text(
-                                            'Vous pouvez supporter le projet en contribuant à son développement.'),
-                                        actions: [
-                                          TextButton(
-                                            child: Text('Annuler'),
-                                            onPressed: () =>
-                                                Navigator.pop(context),
-                                          ),
-                                          TextButton(
-                                            child:
-                                                Text('Cliquer ici Contribuer '),
-                                            onPressed: () async {
-                                              await launchUrl(Uri.parse(
-                                                  'https://wa.me/+22799463594?text=BonjourjaiinstallercarbuTrack,_je_vais_aidez_le_projet '));
-                                            },
-                                          ),
-                                        ],
-                                      );
-                                    });
-                                Navigator.pop(context);
+                                context.push(AppRoutes.setting.path);
                               },
                             ),
                           ],

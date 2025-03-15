@@ -40,28 +40,11 @@ class ProfileScreen extends StatelessWidget {
             const SizedBox(height: 30),
             _buildInfoCard(
               icon: Icons.phone,
-              title: 'Phone',
-              subtitle: '+1 234 567 890',
+              title: 'Telephone',
+              subtitle: '+227 99463594 ',
             ),
             const SizedBox(height: 10),
-            _buildInfoCard(
-              icon: Icons.location_on,
-              title: 'Location',
-              subtitle: 'New York, USA',
-            ),
-            const SizedBox(height: 10),
-            _buildInfoCard(
-              icon: Icons.calendar_today,
-              title: 'Member Since',
-              subtitle: 'January 2023',
-            ),
             const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                // Handle edit profile
-              },
-              child: const Text('Edit Profile'),
-            ),
           ],
         ),
       ),
