@@ -108,12 +108,12 @@ class StationsNotifier extends StateNotifier<List<Station>> {
 
   // Add a station to favorites
   void addToFavorites(String stationId) {
-    // state = state.map((station) {
-    //   if (station.id == stationId) {
-    //     return station.copyWith(isFavorite: true);
-    //   }
-    //   return station;
-    // }).toList();
+    state = state.map((station) {
+      if (station.id == stationId) {
+        return station.copyWith(isFavorite: true);
+      }
+      return station;
+    }).toList();
   }
 
   // Remove a station from favorites
