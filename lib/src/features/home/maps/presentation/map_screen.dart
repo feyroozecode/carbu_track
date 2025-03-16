@@ -48,9 +48,18 @@ class _MapScreenState extends ConsumerState<MapScreen>
     // 'GPL'
   ];
 
+  bool _isLoadingMap = true; // Add a flag to track loading state
+
   @override
   void initState() {
     super.initState();
+
+    // Simulate a loading delay for the map
+    Future.delayed(const Duration(seconds: 3), () {
+      setState(() {
+        _isLoadingMap = false; // Set loading to false after delay
+      });
+    });
     // Initialize animation controllers for smooth loading transitions
     _mapFadeController = AnimationController(
       vsync: this,
@@ -197,17 +206,8 @@ class _MapScreenState extends ConsumerState<MapScreen>
     });
   }
 
-  Future<void> _openMaps(double lat, double lng) async {
-    MapsLauncher.launchCoordinates(lat, lng);
-
-    // await MapLauncher.showMarker(
-    //   mapType: MapType.google,
-    //   coords: Coords(lat, lng),
-    //   title: ref.watch(nearestStationProvider)!.name,
-    //   description: ref.watch(nearestStationProvider)!.name +
-    //       ref.watch(nearestStationProvider)!.brand!,
-    // );
-  }
+  Future<void> _openMaps(double lat, double lng) async =>
+      MapsLauncher.launchCoordinates(lat, lng);
 
   String _calculateDistance(LatLng start, LatLng end) {
     final Distance distance = Distance();
@@ -527,8 +527,8 @@ class _MapScreenState extends ConsumerState<MapScreen>
           nearestStation != null && station.id == nearestStation.id;
 
       return Marker(
-        width: 50.0,
-        height: 50.0,
+        width: 100.0,
+        height: 80.0,
         point: LatLng(station.latitude, station.longitude),
         child: GestureDetector(
             onTap: () => _showStationDetails(station),
@@ -538,10 +538,11 @@ class _MapScreenState extends ConsumerState<MapScreen>
                   //Show label for nearest or favorite stations
                   Text(
                     station.name,
+                    maxLines: 2,
                     style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
-                      fontSize: 7,
+                      fontSize: 9,
                       backgroundColor: Colors.white.withOpacity(0.7),
                     ),
                   ),
@@ -551,16 +552,16 @@ class _MapScreenState extends ConsumerState<MapScreen>
                   color: isNearest
                       ? Colors.green
                       : (station.isFavorite ? Colors.red : AppColors.primary),
-                  size: isNearest ? 45 : 35,
+                  size: isNearest ? 45 : 38,
                 ),
 
                 if (userLocation != null)
                   Text(
-                    'à ${_calculateDistance(userLocation, LatLng(station.latitude, station.longitude))} km',
+                    'à ${_calculateDistance(userLocation, LatLng(station.latitude, station.longitude))} ',
                     style: TextStyle(
-                      color: AppColors.success,
+                      color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 7,
+                      fontSize: isNearest ? 9 : 11,
                     ),
                   ),
               ],
@@ -630,9 +631,10 @@ class _MapScreenState extends ConsumerState<MapScreen>
         children: [
           // Floating widget to show station counts
           Positioned(
-            top: MediaQuery.of(context).padding.top + 60,
+            top: MediaQuery.of(context).padding.top + 80,
             right: 16,
             child: Card(
+              color: Colors.orange,
               elevation: 4,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
@@ -679,6 +681,27 @@ class _MapScreenState extends ConsumerState<MapScreen>
                   userAgentPackageName: 'com.carbutrack.app',
                 ),
 
+                // Circular progress indicator in the center of the map
+                if (_isLoadingMap)
+                  Center(
+                    child: Container(
+                      width: 60.0,
+                      height: 60.0,
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.8),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: CircularProgressIndicator(
+                          strokeWidth: 4.0,
+                          valueColor:
+                              AlwaysStoppedAnimation<Color>(AppColors.primary),
+                        ),
+                      ),
+                    ),
+                  ),
+
                 // Draw route line to nearest station with animation
                 if (userLocation != null && nearestStation != null)
                   AnimatedBuilder(
@@ -700,7 +723,7 @@ class _MapScreenState extends ConsumerState<MapScreen>
                                           _routeAnimation.value),
                             ],
                             strokeWidth: 4.0,
-                            color: Colors.blue,
+                            color: AppColors.success,
                             //isDotted: true,
                           ),
                         ],
@@ -738,7 +761,7 @@ class _MapScreenState extends ConsumerState<MapScreen>
                                 opacity: _routeAnimation.value,
                                 child: const Icon(
                                   Icons.arrow_forward,
-                                  color: Colors.blue,
+                                  color: AppColors.primary,
                                   size: 30,
                                 ),
                               ),
@@ -842,7 +865,7 @@ class _MapScreenState extends ConsumerState<MapScreen>
           //   ),
 
           Positioned(
-            top: MediaQuery.of(context).padding.top + 70,
+            top: MediaQuery.of(context).padding.top + kToolbarHeight + 16,
             right: 32,
             child: Card(
               elevation: 4,

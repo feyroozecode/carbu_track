@@ -85,12 +85,18 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       appBar: isFullScreen && selectedTab == 0
           ? null
           : AppBar(
-              title: const Text('CarbuTrack',
-                  style: TextStyle(
+              title: Text(
+                  selectedTab == 0
+                      ? 'CarbuTrack'
+                      : selectedTab == 1
+                          ? "Favoris"
+                          : "Plus",
+                  style: const TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
                     color: AppColors.primary,
                   )),
+              centerTitle: selectedTab == 0 ? false : true,
               actions: [
                 if (selectedTab == 0) // Show fullscreen toggle only for map
                   IconButton(
@@ -99,15 +105,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       setState(() {});
                     },
                   ),
-                IconButton(
-                  icon: Icon(
-                      isFullScreen ? Icons.fullscreen_exit : Icons.fullscreen),
-                  onPressed: () {
-                    setState(() {
-                      isFullScreen = !isFullScreen;
-                    });
-                  },
-                ),
+                if (selectedTab == 0)
+                  IconButton(
+                    icon: Icon(isFullScreen
+                        ? Icons.fullscreen_exit
+                        : Icons.fullscreen),
+                    onPressed: () {
+                      setState(() {
+                        isFullScreen = !isFullScreen;
+                      });
+                    },
+                  ),
                 // Add contribute button
                 IconButton(
                   icon: Icon(Icons.volunteer_activism),
