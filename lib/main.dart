@@ -1,5 +1,8 @@
+import 'dart:io';
 
+import 'package:carbu_track/src/features/home/favorite/infrastructure/domain/favorite.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_ce/hive.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'src/app.dart';
@@ -10,7 +13,10 @@ import 'src/exceptions/error_logger.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  //await dotenv.load(fileName: '.env');
+  Hive
+    ..init(Directory.current.path)
+    ..registerAdapter(FavoriteAdapter());
+
   final container = ProviderContainer(
     overrides: [], // define overrides scope for porviders
     observers: [AsyncErrorLogger()],
@@ -21,4 +27,3 @@ void main() async {
   initSupabase();
   runApp(UncontrolledProviderScope(container: container, child: const MyApp()));
 }
-

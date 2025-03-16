@@ -59,10 +59,9 @@ dependencies:
   permission_handler: ^11.4.0
   flutter_map: ^7.0.2
   flutter_map_marker_cluster: ^1.4.0
-  map_launcher: ^3.5.0
   maps_launcher: ^3.0.0+1
   flutter_launcher_icons: ^0.14.3
-  flutter_email_sender: ^7.0.0
+  hive_ce: 2.10.1
 
 dev_dependencies:
   flutter_test:
@@ -86,6 +85,7 @@ dev_dependencies:
 
   custom_lint:
   riverpod_lint: ^2.6.1
+  hive_ce_generator:
 
 
 flutter_launcher_icons:

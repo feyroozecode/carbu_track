@@ -6,14 +6,13 @@ import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:geolocator/geolocator.dart';
-import 'package:map_launcher/map_launcher.dart';
 import 'package:maps_launcher/maps_launcher.dart';
 import 'package:permission_handler/permission_handler.dart';
 
-import '../../../../../common/constants/app_colors.dart';
-import '../../domain/station.dart';
-import '../providers/location_provider.dart';
-import '../providers/stations_provider.dart';
+import '../../../../common/constants/app_colors.dart';
+import '../../core/domain/station.dart';
+import '../../core/providers/location_provider.dart';
+import '../../core/providers/stations_provider.dart';
 
 class MapScreen extends ConsumerStatefulWidget {
   const MapScreen({super.key});
@@ -210,6 +209,19 @@ class _MapScreenState extends ConsumerState<MapScreen>
     // );
   }
 
+  String _calculateDistance(LatLng start, LatLng end) {
+    final Distance distance = Distance();
+    final double distanceInKm = distance.as(LengthUnit.Kilometer, start, end);
+
+    if (distanceInKm < 1) {
+      // Convert to meters if less than 1km
+      final int distanceInMeters = (distanceInKm * 1000).round();
+      return '$distanceInMeters m';
+    }
+
+    return '${distanceInKm.toStringAsFixed(2)} km';
+  }
+
   void _showStationDetails(Station station) {
     showModalBottomSheet(
       context: context,
@@ -295,7 +307,7 @@ class _MapScreenState extends ConsumerState<MapScreen>
 
                   // Fuel types
                   const Text(
-                    'Available Fuels',
+                    'Ouvert',
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -515,19 +527,44 @@ class _MapScreenState extends ConsumerState<MapScreen>
           nearestStation != null && station.id == nearestStation.id;
 
       return Marker(
-        width: 40.0,
-        height: 40.0,
+        width: 50.0,
+        height: 50.0,
         point: LatLng(station.latitude, station.longitude),
         child: GestureDetector(
-          onTap: () => _showStationDetails(station),
-          child: Icon(
-            Icons.local_gas_station,
-            color: isNearest
-                ? Colors.green
-                : (station.isFavorite ? Colors.red : AppColors.primary),
-            size: isNearest ? 35 : 30,
-          ),
-        ),
+            onTap: () => _showStationDetails(station),
+            child: Column(
+              children: [
+                if (isNearest || station.isFavorite)
+                  //Show label for nearest or favorite stations
+                  Text(
+                    station.name,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 7,
+                      backgroundColor: Colors.white.withOpacity(0.7),
+                    ),
+                  ),
+                // the tile of the station marker
+                Icon(
+                  Icons.local_gas_station,
+                  color: isNearest
+                      ? Colors.green
+                      : (station.isFavorite ? Colors.red : AppColors.primary),
+                  size: isNearest ? 45 : 35,
+                ),
+
+                if (userLocation != null)
+                  Text(
+                    'à ${_calculateDistance(userLocation, LatLng(station.latitude, station.longitude))} km',
+                    style: TextStyle(
+                      color: AppColors.success,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 7,
+                    ),
+                  ),
+              ],
+            )),
       );
     }).toList();
 

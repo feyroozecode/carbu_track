@@ -7,7 +7,7 @@ import 'package:geolocator/geolocator.dart';
 
 import '../../../common/constants/app_colors.dart';
 import '../../home/core/presentation/home_screen.dart';
-import '../../home/core/presentation/providers/location_provider.dart';
+import '../../home/core/providers/location_provider.dart';
 import 'package:latlong2/latlong.dart';
 import 'package:go_router/go_router.dart';
 

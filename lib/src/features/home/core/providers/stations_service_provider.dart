@@ -2,8 +2,8 @@
 
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../../data/stations_repository.dart';
-import '../../domain/station.dart';
+import '../data/stations_repository.dart';
+import '../domain/station.dart';
 
 // Repository provider
 final stationsRepositoryProvider = Provider<StationsRepository>((ref) {

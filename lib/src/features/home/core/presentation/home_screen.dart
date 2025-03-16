@@ -5,10 +5,10 @@ import 'package:go_router/go_router.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../common/constants/app_colors.dart';
-import '../../favorites/presentation/favorite_screen.dart';
-import 'widgets/map_screen.dart';
+import '../../favorite/presentation/favorite_screen.dart';
+import '../../maps/presentation/map_screen.dart';
 import '../../settings/settings_screen.dart';
-import 'widgets/notification_screen.dart';
+import '../../notifs/presentation/notification_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});

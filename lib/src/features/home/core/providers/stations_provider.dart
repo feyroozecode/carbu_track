@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:latlong2/latlong.dart';
 
-import '../../domain/station.dart';
-import '../providers/location_provider.dart';
+import '../domain/station.dart';
+import 'location_provider.dart';
 
 // Provider for loading state
 final stationsLoadingProvider = StateProvider<bool>((ref) => false);
@@ -108,12 +108,12 @@ class StationsNotifier extends StateNotifier<List<Station>> {
 
   // Add a station to favorites
   void addToFavorites(String stationId) {
-    state = state.map((station) {
-      if (station.id == stationId) {
-        return station.copyWith(isFavorite: true);
-      }
-      return station;
-    }).toList();
+    // state = state.map((station) {
+    //   if (station.id == stationId) {
+    //     return station.copyWith(isFavorite: true);
+    //   }
+    //   return station;
+    // }).toList();
   }
 
   // Remove a station from favorites

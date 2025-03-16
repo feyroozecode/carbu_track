@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_email_sender/flutter_email_sender.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../auth/infrastructure/auth_service.dart';
@@ -21,8 +20,9 @@ class _FeedbackScreenState extends State<FeedbackScreen> {
 
   Future<void> _sendEmail() async {
     if (_formKey.currentState!.validate()) {
+      String myEmail = "carbutracksos@gmail.com";
       final emailUrl = Uri.parse(
-          'mailto:${_emailController.text}?subject=FeedbackCarbuTrack&body=${_messageController.text}');
+          'mailto:${myEmail}?subject=FeedbackCarbuTrack&body=${_messageController.text + " par \n" + _nameController.text + " \n" + _emailController.text}');
       if (await canLaunchUrl(emailUrl)) {
         await launchUrl(emailUrl);
       } else {

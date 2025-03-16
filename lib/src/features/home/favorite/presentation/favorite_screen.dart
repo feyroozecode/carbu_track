@@ -1,10 +1,11 @@
+import 'package:carbu_track/src/common/constants/app_size.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../common/constants/app_colors.dart';
 import '../../core/domain/station.dart';
-import '../../core/presentation/providers/stations_provider.dart';
+import '../../core/providers/stations_provider.dart';
 
 class FavoriteScreen extends ConsumerWidget {
   const FavoriteScreen({super.key});
@@ -12,8 +13,9 @@ class FavoriteScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final stations = ref.watch(stationsProvider);
-    final favoriteStations = stations.where((station) => station.isFavorite).toList();
-    
+    final favoriteStations =
+        stations.where((station) => station.isFavorite).toList();
+
     if (favoriteStations.isEmpty) {
       return Center(
         child: Column(
@@ -46,7 +48,7 @@ class FavoriteScreen extends ConsumerWidget {
         ),
       );
     }
-    
+
     return ListView.builder(
       padding: const EdgeInsets.all(16),
       itemCount: favoriteStations.length,
@@ -56,15 +58,16 @@ class FavoriteScreen extends ConsumerWidget {
       },
     );
   }
-  
-  Widget _buildStationCard(BuildContext context, Station station, WidgetRef ref) {
+
+  Widget _buildStationCard(
+      BuildContext context, Station station, WidgetRef ref) {
     return Card(
       margin: const EdgeInsets.only(bottom: 16),
       elevation: 2,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Padding(
+      child: Padding( 
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -107,12 +110,14 @@ class FavoriteScreen extends ConsumerWidget {
                     color: Colors.red,
                   ),
                   onPressed: () {
-                    ref.read(stationsProvider.notifier).removeFromFavorites(station.id);
+                    ref
+                        .read(stationsProvider.notifier)
+                        .removeFromFavorites(station.id);
                   },
                 ),
               ],
             ),
-            const SizedBox(height: 16),
+            gapH16,
             if (station.fuelTypes.isNotEmpty) ...[
               const Text(
                 'Carburants disponibles:',
@@ -121,7 +126,7 @@ class FavoriteScreen extends ConsumerWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 8),
+              gapH8,
               Wrap(
                 spacing: 8,
                 runSpacing: 8,
@@ -158,7 +163,8 @@ class FavoriteScreen extends ConsumerWidget {
                 Expanded(
                   child: ElevatedButton.icon(
                     onPressed: () async {
-                      final url = 'https://www.google.com/maps/dir/?api=1&destination=${station.latitude},${station.longitude}';
+                      final url =
+                          'https://www.google.com/maps/dir/?api=1&destination=${station.latitude},${station.longitude}';
                       if (await canLaunchUrl(Uri.parse(url))) {
                         await launchUrl(Uri.parse(url));
                       } else {
@@ -180,7 +186,7 @@ class FavoriteScreen extends ConsumerWidget {
       ),
     );
   }
-  
+
   void _showStationDetails(BuildContext context, Station station) {
     showModalBottomSheet(
       context: context,
@@ -213,7 +219,7 @@ class FavoriteScreen extends ConsumerWidget {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  
+
                   // Station name and favorite button
                   Row(
                     children: [
@@ -235,7 +241,9 @@ class FavoriteScreen extends ConsumerWidget {
                               size: 28,
                             ),
                             onPressed: () {
-                              ref.read(stationsProvider.notifier).removeFromFavorites(station.id);
+                              ref
+                                  .read(stationsProvider.notifier)
+                                  .removeFromFavorites(station.id);
                               Navigator.pop(context);
                             },
                           );
@@ -243,7 +251,7 @@ class FavoriteScreen extends ConsumerWidget {
                       ),
                     ],
                   ),
-                  
+
                   // Brand
                   if (station.brand != null) ...[
                     const SizedBox(height: 8),
@@ -255,9 +263,9 @@ class FavoriteScreen extends ConsumerWidget {
                       ),
                     ),
                   ],
-                  
+
                   const SizedBox(height: 24),
-                  
+
                   // Fuel types
                   const Text(
                     'Carburants disponibles',
@@ -280,9 +288,9 @@ class FavoriteScreen extends ConsumerWidget {
                       );
                     }).toList(),
                   ),
-                  
+
                   const SizedBox(height: 24),
-                  
+
                   // Location
                   const Text(
                     'Localisation',
@@ -300,13 +308,14 @@ class FavoriteScreen extends ConsumerWidget {
                       color: Colors.grey[700],
                     ),
                   ),
-                  
+
                   const SizedBox(height: 24),
-                  
+
                   // Actions
                   ElevatedButton.icon(
                     onPressed: () async {
-                      final url = 'https://www.google.com/maps/dir/?api=1&destination=${station.latitude},${station.longitude}';
+                      final url =
+                          'https://www.google.com/maps/dir/?api=1&destination=${station.latitude},${station.longitude}';
                       if (await canLaunchUrl(Uri.parse(url))) {
                         await launchUrl(Uri.parse(url));
                       } else {

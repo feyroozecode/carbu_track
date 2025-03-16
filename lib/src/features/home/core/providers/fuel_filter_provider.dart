@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../domain/station.dart';
+import '../domain/station.dart';
 import 'stations_provider.dart';
 
 // Provider for selected fuel type
