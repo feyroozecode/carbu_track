@@ -30,17 +30,32 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
     if (email.isEmpty || code.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           content: Text("Veuillez remplir tous les champs".hardcoded)));
+      return;
     }
-    if (!email.isEmpty || code.isEmpty) {
+
+    try {
+      // Try to sign in first
+      await authService.signInWithEmailAndPassword(email, code);
+      // If successful, navigate to home
+      //context.pushReplacement(AppRoutes.home.path);
+    } catch (e) {
+      // If sign in fails, try to create a new account
       try {
-        await authService.signInWithEmailAndPassword(email, code);
-      } catch (e) {
-        //showErrorDialog(context, e.toString());
+        await authService.signUpWithEmailAndPassword(email, code).then((r) {
+          // if user created
+          if (r.session != null) {
+            ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(content: Text("Compte créé avec succès".hardcoded)));
+          }
+        });
+        // If account creation is successful, navigate to home
+      } catch (signUpError) {
+        // If both sign in and sign up fail, show error
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-            content: Text("Une erreur est survenue. ${e.toString()}")));
+            content:
+                Text("Une erreur est survenue. ${signUpError.toString()}")));
       }
     }
-    // Perform login logic
   }
 
   // sign up

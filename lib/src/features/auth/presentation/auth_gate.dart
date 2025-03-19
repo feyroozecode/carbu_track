@@ -8,7 +8,6 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 class AuthGateScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    // TODO: implement build
     return StreamBuilder(
         stream: Supabase.instance.client.auth.onAuthStateChange,
         builder: (context, snapshot) {
