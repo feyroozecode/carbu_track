@@ -1,6 +1,4 @@
-import 'package:carbu_track/src/features/home/core/presentation/home_screen.dart';
 import 'package:carbu_track/src/features/home/settings/providers/setting_provider.dart';
-import 'package:carbu_track/src/features/splash/presentation/splash_screen.dart';
 import 'package:carbu_track/src/localization/string_hardcoded.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
